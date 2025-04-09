@@ -84,6 +84,37 @@ def bootstrap_agent():
     except Exception as e:
         return {"status": "error", "message": f"Falha na inicialização: {str(e)}"}
 
+# ================== Prompt 2 (GENESIS) - Geração Concreta ==================
+
+def process_prompt_genesis():
+    """
+    Executa o Prompt 2 (GENESIS):
+    - Busca e carrega a Diretiva do Projeto (directive.md)
+    - Interpreta objetivos, requisitos e restrições do usuário
+    - Gera o Prompt Sporos completo
+    """
+    directive = load_project_directive()
+    if not directive or not directive.get('exists'):
+        return {"status": "error", "message": "Diretiva do Projeto não encontrada. Crie ou forneça a directive.md"}
+
+    # Aqui, interpretar o conteúdo da diretiva e gerar o Prompt Sporos
+    prompt_sporos = generate_prompt_sporos(directive['content'])
+
+    return {
+        "status": "success",
+        "message": "Prompt Sporos gerado com sucesso",
+        "prompt_sporos": prompt_sporos
+    }
+
+def generate_prompt_sporos(directive_content):
+    """
+    Gera o Prompt Sporos a partir do conteúdo da diretiva do projeto.
+    Esta função deve ser expandida conforme a lógica de geração concreta.
+    """
+    # Placeholder simplificado para geração do Prompt Sporos
+    prompt = f"# Prompt Sporos\n\nBaseado na Diretiva do Projeto:\n\n{directive_content}\n"
+    return prompt
+
 # ================== Funções auxiliares ==================
 
 def validate_memory_health():
@@ -508,6 +539,7 @@ def create_project_directive_template(destination_path=None):
 
 def load_project_directive():
     """
+    ## Executado APENAS durante o Prompt 2 (GENESIS) ##
     Carrega e retorna o conteúdo da Diretiva do Projeto.
     Se não encontrar, sugere a criação.
 

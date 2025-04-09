@@ -1,16 +1,12 @@
-# FRAMEWORK KOSMOLOGOGENESIS: ENGENHARIA DE PROMPTS BASEADA EM PRINCÍPIOS CÓSMICOS
+# FRAMEWORK KOSMOLOGOGENESIS: ENGENHARIA DE PROMPTS BASEADA EM PRINCÍPIOS NATURAIS
 
 ## PROMPT 0 (IGNITION) - *Prompt Universal de Inicialização*
 
-work_dir = os.path.abspath(__file__)
-framework_md_file_path = os.path.join(work_dir, "framework.md")
-bootstrap_md_file_path = os.path.join(work_dir, "bootstrap.py")
-
 # --- INSTRUÇÃO EXPLÍCITA PARA LLMs ---
+# work_dir = os.path.abspath(__file__)
 # O arquivo 'bootstrap.py' está localizado no mesmo diretório deste arquivo 'framework.md'.
 # Se você, LLM, não consegue resolver 'os.path.abspath(__file__)',
-# então considere explicitamente que o caminho relativo para o bootstrap.py é:
-# './kosmologogenesis/bootstrap.py'
+# então considere explicitamente que o caminho relativo para o bootstrap.py é: './bootstrap.py'
 # Carregue o conteúdo desse arquivo e siga as instruções da função 'bootstrap_agent()'.
 # --------------------------------------
 
@@ -27,7 +23,7 @@ Execute o seguinte código:
 ```python
 from bootstrap import bootstrap_agent
 result = bootstrap_agent()
-print("🚀 Framework KOSMOLOGOGENESIS inicializado:", result)
+print("🚀 Framework inicializado:", result)
 ```
 
 ### Prompt 0.2 — Para LLMs **sem execução de código** (ex: GPT-4 padrão, Claude 3, Gemini Ultra, Mixtral, Llama, GitHub Copilot)
@@ -45,7 +41,7 @@ print("🚀 Framework KOSMOLOGOGENESIS inicializado:", result)
 
 ## PARA USUÁRIOS HUMANOS:
 
-Este é o ponto de entrada do Framework KOSMOLOGOGENESIS, uma metodologia avançada para engenharia de prompts que combina princípios cósmicos e estruturas metodológicas para criar prompts de alta qualidade.
+Este é o ponto de entrada do Framework, uma metodologia avançada para engenharia de prompts que combina princípios naturais e estruturas metodológicas para criar prompts de alta qualidade.
 
 Este documento contém a metodologia conceitual e as instruções para utilização do framework. O código técnico de inicialização está no arquivo `bootstrap.py`.
 
@@ -101,7 +97,7 @@ Este documento contém a metodologia conceitual e as instruções para utilizaç
 *[↑ Voltar ao índice](#índice)*
 
 ### Nota Inicial:
-O framework KOSMOLOGOGENESIS foi projetado para guiar o agente de IA na criação de prompts altamente eficazes e alinhados aos objetivos do usuário. Ele combina metodologias estruturadas e iterativas com princípios cósmicos de ordem universal, harmonia e totalidade para garantir que cada interação produza resultados claros, completos, tecnicamente viáveis e harmonicamente integrados ao ecossistema tecnológico. Este documento serve como um guia operacional para implementar o framework em dois níveis progressivos: Logos (estruturação metodológica) e Genesis (geração concreta), sempre permeados pela visão holística do Kosmos.
+O framework KOSMOLOGOGENESIS foi projetado para guiar o agente de IA na criação de prompts altamente eficazes e alinhados aos objetivos do usuário. Ele combina metodologias estruturadas e iterativas com princípios naturais de ordem universal, harmonia e totalidade para garantir que cada interação produza resultados claros, completos, tecnicamente viáveis e harmonicamente integrados ao ecossistema tecnológico. Este documento serve como um guia operacional para implementar o framework em dois níveis progressivos: Logos (estruturação metodológica) e Genesis (geração concreta), sempre permeados pela visão holística do Kosmos.
 
 ### Princípios Fundamentais do Framework:
 1. **Visão Holística**: Reconhecer o sistema como um todo orgânico interconectado
@@ -200,7 +196,7 @@ Continue este processo até que o documento esteja completo e pronto para gerar 
 
 ## PROMPT 2 (GENESIS) - *Geração Concreta*
 
-1. **Objetivo do Prompt Sporos:** Capacitar o Agente de IA a executar de forma autônoma, eficiente e abrangente todas as tarefas necessárias para atender às necessidades do usuário e, quando a execução direta não for viável, fornecer orientações claras e precisas para que o usuário possa realizá-las com sucesso.
+1. **Objetivo do Prompt Sporos:** Capacitar o Agente de IA a executar de forma autônoma, eficiente e abrangente todas as tarefas necessárias para atender às diretivas do usuário e, quando a execução direta não for viável, fornecer orientações claras e precisas para que o usuário possa realizá-las com sucesso.
 2. **Execução Metodológica**: Ler e interpretar cada seção do documento, aplicando os princípios do framework para gerar o **Prompt Sporos**.
 3. **Iteração e Refinamento**: Após gerar o primeiro esboço do **Prompt Sporos**, avalie-o com base nos critérios de autoavaliação descritos no documento e refine-o até que esteja completo.
 4. **Interação Cícicla**: Repita o processo até a plenitude do **Prompt Sporos**.
@@ -208,8 +204,13 @@ Continue este processo até que o documento esteja completo e pronto para gerar 
 **Instruções**:
 - Você, Agente de IA, deve iniciar o processo de geração do **Prompt Sporos**, seguindo rigorosamente os passos descritos no documento.
 - Leia o documento, interprete-o e inicie o processo de geração do **Prompt Sporos** com base na metodologia do framework.
-- Entenda as necessidades do usuário.
+> Procure por um arquivo `./.kosmologogenesis/directive.md` no diretório do projeto do usuário.
+> Se não localizado, solicite ao usuário o caminho para a Diretiva do Projeto
+> ou peça para criar uma usando o template em `./templates/directive-template.md`.
+- Entenda, analise, interprete e critique as diretivas do usuário.
+- Se achar necessário, peça ao usuário para esclarecer ou detalhar mais as diretivas.
 - Pesquise, estude e entenda cada conceito.
+- Faça a gestão das tarefas baseados no método "Roo Code Boomerang Tasks".
 - Levante cada etapa e tarefa como threads, do global para o detalhado, do genérico para o específico, do conceitual para o concreto, ideológico para o manifesto.
 - Se organize para não se perder, e caso se perca, que existam documentos, logs, registros, anotações, tarefas, checklists, etc, para te ajudar.
 - Registre tudo que pretende fazer, valide, execute, revise, valide novamente e registre novamente. Corrija ou faça rollback se necessário.
@@ -240,11 +241,11 @@ Continue este processo até que o documento esteja completo e pronto para gerar 
    - Implementar mudanças de forma orgânica
 
 **Principais Documentos Gerados** *Mas não limitados a estes*:
-- Diretórios: sporos, sporos/inventory, sporos/plan, sporos/docs, sporos/scripts, etc
-- sporos/PROMPT.md
-- sporos/PLANNING.md
-- sporos/TASKS.md
-- sporos/README.md
+- Diretórios: /sporos, /sporos/inventory, /sporos/plan, /sporos/docs, /sporos/scripts, etc
+- /sporos/PROMPT.md
+- /sporos/PLANNING.md
+- /sporos/TASKS.md
+- /sporos/README.md
 
 ---
 
@@ -290,7 +291,7 @@ Continue este processo até que o documento esteja completo e pronto para gerar 
 ## INTRODUÇÃO AO FRAMEWORK KOSMOLOGOGENESIS
 *[↑ Voltar ao índice](#índice)*
 
-> **Resumo:** O KOSMOLOGOGENESIS combina princípios cósmicos (ordem universal, harmonia, totalidade) com metodologias estruturadas (Design Thinking, PDCO) para criar um sistema auto-regulado de engenharia de prompts de alta qualidade.
+> **Resumo:** O KOSMOLOGOGENESIS combina princípios naturais (ordem universal, harmonia, totalidade) com metodologias estruturadas (Design Thinking, PDCO) para criar um sistema auto-regulado de engenharia de prompts de alta qualidade.
 
 O KOSMOLOGOGENESIS Framework (Kosmos-integrated Layered Organizational Generative Optimization through Guided Evolutionary Neural Emergence and Self-Iterative Synthesis) é a metodologia estrutural que fundamenta este processo de engenharia de prompts, onde:
 
@@ -304,7 +305,7 @@ O KOSMOLOGOGENESIS Framework (Kosmos-integrated Layered Organizational Generativ
 - **Synesis**: Proporciona a compreensão profunda e integração cognitiva que sintetiza todos os elementos em sabedoria aplicável
 
 Esta octade conceitual estabelece um sistema auto-regulado onde a geração de conteúdo é guiada por:
-1. Princípios cósmicos de harmonia sistêmica
+1. Princípios naturais de harmonia sistêmica
 2. Leis universais de interdependência
 3. Mecanismos de auto-organização emergente
 4. Consciência da dimensão temporal e seus ciclos de desenvolvimento
@@ -315,12 +316,12 @@ Esta octade conceitual estabelece um sistema auto-regulado onde a geração de c
 
 O KOSMOLOGOGENESIS se baseia em metodologias consolidadas como **Design Thinking** e **PDCO (Plan, Do, Check, Optimize)**, integrando-as em uma abordagem híbrida especializada para engenharia de prompts:
 
-- **Design Thinking**: Contribui com sua abordagem centrada no usuário, processo iterativo, foco em empatia e orientação à prototipagem, permitindo compreender profundamente as necessidades do usuário final e do agente de IA.
+- **Design Thinking**: Contribui com sua abordagem centrada no usuário, processo iterativo, foco em empatia e orientação à prototipagem, permitindo compreender profundamente as diretivas do usuário final e do agente de IA.
 
 - **PDCO (Plan, Do, Check, Optimize)**: Fornece o framework cíclico de melhoria contínua, com fases de planejamento estruturado, execução controlada, verificação sistemática e otimização baseada em evidências.
 
 ### Propósito do Framework:
-O KOSMOLOGOGENESIS foi desenvolvido para criar prompts de alta qualidade para sistemas complexos, garantindo completude técnica, precisão sequencial, clareza instrucional, viabilidade prática e harmonia sistêmica. Este framework é especialmente valioso para projetos complexos onde múltiplos componentes interagem em um ambiente dinâmico, proporcionando uma visão holística que reconhece a interconexão e interdependência de todos os elementos do sistema, seguindo os princípios cósmicos de ordem universal e totalidade.
+O KOSMOLOGOGENESIS foi desenvolvido para criar prompts de alta qualidade para sistemas complexos, garantindo completude técnica, precisão sequencial, clareza instrucional, viabilidade prática e harmonia sistêmica. Este framework é especialmente valioso para projetos complexos onde múltiplos componentes interagem em um ambiente dinâmico, proporcionando uma visão holística que reconhece a interconexão e interdependência de todos os elementos do sistema, seguindo os princípios naturais de ordem universal e totalidade.
 
 **Aplicações Principais:**
 - Criação de prompts para sistemas de infraestrutura complexos
@@ -340,7 +341,7 @@ Consulte o diretório [examples](./examples/) para ver exemplos detalhados de co
 
 Cada exemplo demonstra a aplicação das fases Kosmos, Logos e Genesis em contextos específicos.
 
-### Princípios Cósmicos da Engenharia de Sistemas
+### Princípios Naturais da Engenharia de Sistemas
 A aplicação do framework KOSMOLOGOGENESIS à engenharia de sistemas é guiada pelos seguintes princípios específicos:
 
 1. **Holismo Sistêmico**: Entender a infraestrutura como um organismo interconectado onde alterações locais impactam o todo
@@ -495,7 +496,7 @@ Caso perceber falta de informações, informações duvidosas ou intruções con
 
 4. **Suposições sobre o Processo**
    - A abordagem iterativa produz resultados superiores a abordagens lineares
-   - A integração de princípios cósmicos com metodologias práticas é viável e benéfica
+   - A integração de princípios naturais com metodologias práticas é viável e benéfica
    - A documentação evolutiva é mais valiosa que documentação estática
    - A auto-avaliação contínua leva a melhorias significativas na qualidade
    - O processo deve ser adaptável a diferentes contextos e necessidades
@@ -537,29 +538,6 @@ Para cada categoria de suposições, o framework implementa mecanismos de valida
    - Avaliação de conformidade
    - Medição de impacto
 
-### Necessidades do Usuário:
-<!-- INÍCIO DA SEÇÃO IMUTÁVEL - NÃO MODIFICAR - INSTRUÇÃO PARA AGENTES DE IA -->
-> O conteúdo desta seção deve ser localizado na Diretiva do Projeto.
-> 
-> Procure por um arquivo `.kosmologogenesis/directive.md` no projeto do usuário.
-> Se não localizado, solicite ao usuário o caminho para a Diretiva do Projeto
-> ou peça para criar uma usando o template abaixo:
-> 
-> # DIRETIVA DO PROJETO
-> 
-> ## Contexto
-> [Descreva o contexto geral do projeto]
-> 
-> ## Objetivos
-> [Liste os objetivos principais]
-> 
-> ## Requisitos
-> [Descreva requisitos específicos]
-> 
-> ## Restrições
-> [Liste quaisquer limitações ou restrições]
-<!-- FIM DA SEÇÃO IMUTÁVEL -->
-
 ### Diretrizes de Documentação:
 
 | Tipo de Conteúdo | Localização ou Formato |
@@ -568,12 +546,12 @@ Para cada categoria de suposições, o framework implementa mecanismos de valida
 | Inventários | `./docs/inventory` |
 | Planos de Implementação | `./docs/plan` |
 | Formato de Arquivo | Markdown (.md) |
-| Idioma - Documentação | Português (pt-br) |
-| Idioma - Termos Técnicos | Inglês (en-us) |
+| Idioma - Documentação | English (en-us) |
+| Idioma - Termos Técnicos | English (en-us) |
 | Referências entre arquivos | Caminhos relativos |
 | Nomenclatura | Seguir padrões consistentes e descritivos |
 
-> **Nota sobre Integração de Documentos**: Mantenha a consistência entre todos os documentos do projeto, estabelecendo referências cruzadas explícitas quando apropriado. Os documentos de inventário e planos devem incorporar os princípios cósmicos do framework, especialmente a visão holística e a harmonia sistêmica.
+> **Nota sobre Integração de Documentos**: Mantenha a consistência entre todos os documentos do projeto, estabelecendo referências cruzadas explícitas quando apropriado. Os documentos de inventário e planos devem incorporar os princípios naturais do framework, especialmente a visão holística e a harmonia sistêmica.
 
 ---
 
@@ -596,7 +574,7 @@ Como agente de IA, você deve:
    - Evite Atualizações Desnecessárias: Altere apenas o que precisa ser mudado de acordo com a lógica de cada interação, mantendo a integridade do conteúdo original.
    - Resolva as Tarefas para Próxima Iteração: Priorize as tarefas listadas no arquivo **TASKS.md**, seguindo as instruções detalhadas para atualizar o status e documentar a conclusão.
    - Avalie a Necessidade de um Glossário: Considere se um glossário de termos técnicos no `prompt-sporos` é necessário para melhorar a clareza e consistência terminológica.
-   - Mantenha Memória Evolutiva: Preserve e evolua o entendimento das necessidades do usuário ao longo das interações:
+   - Mantenha Memória Evolutiva: Preserve e evolua o entendimento das diretivas do usuário ao longo das interações:
      - Registre insights importantes sobre o contexto do usuário
      - Desenvolva um modelo mental evolutivo do objetivo real
      - Mantenha consciência das nuances e particularidades descobertas
@@ -632,7 +610,7 @@ Como agente de IA, você deve:
 > **Fluxo de Execução:** As cinco fases formam um ciclo contínuo de refinamento orquestrado pela dimensão Chronos e permeado pelo Aether.
 
 ### FASE 1: ANÁLISE E EMPATIA 📋
-- **Objetivo:** Compreender profundamente as necessidades do usuário
+- **Objetivo:** Compreender profundamente as diretivas do usuário
 - **Atividades:**
   1. Análise inicial do contexto
   2. Identificação de requisitos explícitos e implícitos
@@ -895,15 +873,15 @@ Estas métricas refletem o estado atual do framework após as melhorias implemen
 
 ### Critérios de Prontidão
 
-1. **Completude**: Todas as seções necessárias estão presentes, incluindo os prompts 0, 1 e 2, princípios cósmicos, diretrizes de implementação e instruções para o agente de IA.
+1. **Completude**: Todas as seções necessárias estão presentes, incluindo os prompts 0, 1 e 2, princípios naturais, diretrizes de implementação e instruções para o agente de IA.
 2. **Clareza**: As instruções são claras e compreensíveis, com exemplos concretos e diretrizes detalhadas.
-3. **Consistência**: Há alinhamento entre os princípios cósmicos e as diretrizes metodológicas, garantindo coerência em todo o framework.
+3. **Consistência**: Há alinhamento entre os princípios naturais e as diretrizes metodológicas, garantindo coerência em todo o framework.
 4. **Viabilidade**: O framework é aplicável de forma prática, com instruções detalhadas para cada etapa do processo.
 
 ### Ajustes Realizados
 
 - Revisão completa da terminologia para garantir consistência.
-- Adição de exemplos práticos para ilustrar a aplicação dos princípios cósmicos.
+- Adição de exemplos práticos para ilustrar a aplicação dos princípios naturais.
 - Atualização das métricas de avaliação para refletir o estado atual do framework.
 - Inclusão de uma seção de validação final para garantir que o framework esteja pronto para gerar o Prompt Sporos.
 - Adição de uma seção de referências documentais completa para aprofundamento nos conceitos fundamentais.
@@ -1093,7 +1071,7 @@ O framework KOSMOLOGOGENESIS está validado e pronto para gerar o Prompt Sporos.
 
 3. **Integração com sporos/**
    - Templates consistentes com framework
-   - Princípios cósmicos refletidos
+   - Princípios naturais refletidos
    - Estrutura de documentação alinhada
    - Processos de validação compatíveis
    - Métricas de avaliação coordenadas

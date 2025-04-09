@@ -1,63 +1,63 @@
-# Sistema de Versionamento - Framework KOSMOLOGOGENESIS
+# Versioning System - KOSMOLOGOGENESIS Framework
 
-> **Objetivo:** Gerenciar a evolução do framework de forma controlada, transparente e alinhada com seus princípios.
-
----
-
-## Convenção de Versionamento
-
-- **Formato:** `MAJOR.MINOR.PATCH` (ex: 2.3.1)
-- **MAJOR:** Mudanças disruptivas, que alteram conceitos ou estruturas fundamentais
-- **MINOR:** Novas funcionalidades, melhorias compatíveis
-- **PATCH:** Correções, ajustes menores, documentação
+> **Objective:** Manage the framework's evolution in a controlled, transparent manner aligned with its principles.
 
 ---
 
-## Processo para Nova Versão
+## Versioning Convention
 
-1. **Planejar:**
-   - Definir escopo e objetivos da mudança
-   - Avaliar impacto com base na matriz de validação
-2. **Executar:**
-   - Implementar mudanças
-   - Atualizar documentação, templates, métricas
-3. **Validar:**
-   - Revisar alinhamento com a octade conceitual
-   - Coletar métricas e feedback
-4. **Registrar:**
-   - Atualizar este arquivo com data, autor, motivação e resumo
-   - Atualizar número da versão
-5. **Comunicar:**
-   - Compartilhar com usuários e agentes
-   - Atualizar referências nos documentos
+- **Format:** `MAJOR.MINOR.PATCH` (e.g., 2.3.1)
+- **MAJOR:** Disruptive changes that alter fundamental concepts or structures
+- **MINOR:** New functionalities, compatible improvements
+- **PATCH:** Fixes, minor adjustments, documentation
 
 ---
 
-## Registro de Versões
+## Process for New Version
 
-| Versão | Data | Autor | Motivação | Mudanças Principais |
+1. **Plan:**
+   - Define scope and objectives of the change
+   - Assess impact based on validation matrix
+2. **Execute:**
+   - Implement changes
+   - Update documentation, templates, metrics
+3. **Validate:**
+   - Review alignment with the conceptual octade
+   - Collect metrics and feedback
+4. **Record:**
+   - Update this file with date, author, motivation, and summary
+   - Update version number
+5. **Communicate:**
+   - Share with users and agents
+   - Update references in documents
+
+---
+
+## Version History
+
+| Version | Date | Author | Motivation | Main Changes |
 |---------|------------|--------|------------|-------------------|
-| 1.0.0   | 2024-01-15 | Equipe  | Versão inicial | Estrutura base, octade conceitual, prompts |
-| 1.1.0   | 2024-03-10 | Equipe  | Melhoria | Templates iniciais, exemplos práticos |
-| 2.0.0   | 2025-04-08 | Equipe  | Evolução maior | Integração total com princípios, métricas, versionamento, documentação viva |
+| 1.0.0   | 2024-01-15 | Team  | Initial version | Base structure, conceptual octade, prompts |
+| 1.1.0   | 2024-03-10 | Team  | Improvement | Initial templates, practical examples |
+| 2.0.0   | 2025-04-08 | Team  | Major evolution | Full integration with principles, metrics, versioning, living documentation |
 
 ---
 
-## Recomendações
+## Recommendations
 
-- **Forks e Adaptações:**
-  - Documente claramente o motivo e as diferenças
-  - Mantenha alinhamento com princípios sempre que possível
-  - Use controle de versões próprio, mas registre relação com a versão original
+- **Forks and Adaptations:**
+  - Clearly document the reason and differences
+  - Maintain alignment with principles whenever possible
+  - Use your own version control, but record the relationship with the original version
 
-- **Integração com Métricas e Lições Aprendidas:**
-  - Use dados para justificar mudanças
-  - Documente aprendizados por versão
+- **Integration with Metrics and Lessons Learned:**
+  - Use data to justify changes
+  - Document learnings by version
 
-- **Documentação Viva:**
-  - Atualize guias, templates e matriz de validação a cada versão
-  - Mantenha histórico para rastreabilidade
+- **Living Documentation:**
+  - Update guides, templates, and validation matrix with each version
+  - Maintain history for traceability
 
 ---
 
-> **Nota:** Este sistema deve evoluir continuamente para suportar a melhoria iterativa do framework.
+> **Note:** This system should continuously evolve to support the iterative improvement of the framework.

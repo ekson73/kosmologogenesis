@@ -1,88 +1,88 @@
-# Guia de Boas Práticas para Adaptação Contextual
+# Best Practices Guide for Contextual Adaptation
 
-> **Objetivo:** Orientar a adaptação do framework KOSMOLOGOGENESIS a diferentes domínios, mantendo sua integridade conceitual.
-
----
-
-## Princípios para Adaptação
-- **Preserve a octade conceitual** como núcleo do framework
-- **Adapte processos e exemplos** conforme o contexto
-- **Documente todas as adaptações** e suas motivações
-- **Valide continuamente** alinhamento com os princípios
-- **Promova aprendizado iterativo** durante a adaptação
+> **Objective:** Guide the adaptation of the KOSMOLOGOGENESIS framework to different domains, maintaining its conceptual integrity.
 
 ---
 
-## Elementos Essenciais (não modificar)
-- Octade conceitual (Kosmos, Logos, Genesis, Chronos, Aether, Dynamis, Telos, Synesis)
-- Ciclo iterativo de evolução consciente
-- Importância da documentação viva
-- Processo de validação e reflexão
-
-## Elementos Adaptáveis
-- Exemplos práticos e templates
-- Ferramentas e tecnologias utilizadas
-- Nomenclatura contextualizada
-- Métricas específicas do domínio
-- Fluxos operacionais detalhados
+## Principles for Adaptation
+- **Preserve the conceptual octade** as the core of the framework
+- **Adapt processes and examples** according to context
+- **Document all adaptations** and their motivations
+- **Continuously validate** alignment with the principles
+- **Promote iterative learning** during adaptation
 
 ---
 
-## Passos para Adaptação Contextual
+## Essential Elements (do not modify)
+- Conceptual octade (Kosmos, Logos, Genesis, Chronos, Aether, Dynamis, Telos, Synesis)
+- Iterative cycle of conscious evolution
+- Importance of living documentation
+- Validation and reflection process
 
-1. **Compreender profundamente o framework original**
-2. **Mapear o contexto alvo** (domínio, objetivos, restrições)
-3. **Identificar o que pode ser reutilizado e o que precisa ser adaptado**
-4. **Customizar exemplos, templates e métricas**
-5. **Validar alinhamento com a octade conceitual**
-6. **Documentar todas as decisões e motivações**
-7. **Testar, refletir e iterar**
-8. **Registrar aprendizados e atualizar o guia**
-
----
-
-## Recomendações
-- Use a matriz de validação para avaliar adaptações
-- Mantenha rastreabilidade das mudanças
-- Compartilhe aprendizados com a comunidade
-- Prefira adaptações incrementais e validadas
-- Evite mudanças disruptivas sem justificativa clara
+## Adaptable Elements
+- Practical examples and templates
+- Tools and technologies used
+- Contextualized nomenclature
+- Domain-specific metrics
+- Detailed operational flows
 
 ---
 
-## Exemplos de Adaptação
+## Steps for Contextual Adaptation
 
-- **Infraestrutura como Código:**
-  - Adaptar exemplos para Terraform, Crossplane, ArgoCD
-  - Manter princípios de documentação viva e validação iterativa
-
-- **Desenvolvimento de Software:**
-  - Customizar templates para APIs, microserviços
-  - Preservar ciclo de geração, validação e aprendizado
-
-- **Engenharia de Prompts para IA:**
-  - Adaptar exemplos para geração de prompts
-  - Manter alinhamento com octade e validação contínua
+1. **Deeply understand the original framework**
+2. **Map the target context** (domain, objectives, constraints)
+3. **Identify what can be reused and what needs to be adapted**
+4. **Customize examples, templates, and metrics**
+5. **Validate alignment with the conceptual octade**
+6. **Document all decisions and motivations**
+7. **Test, reflect, and iterate**
+8. **Record learnings and update the guide**
 
 ---
 
-## Perguntas Orientadoras
-- Esta adaptação mantém os princípios essenciais?
-- Quais elementos foram modificados e por quê?
-- Como garantir validação e aprendizado contínuos?
-- Que riscos ou limitações a adaptação introduz?
-- Como documentar e compartilhar os aprendizados?
+## Recommendations
+- Use the validation matrix to evaluate adaptations
+- Maintain traceability of changes
+- Share learnings with the community
+- Prefer incremental and validated adaptations
+- Avoid disruptive changes without clear justification
 
 ---
 
-## Checklist de Validação da Adaptação
-- [ ] Octade conceitual preservada
-- [ ] Documentação viva mantida
-- [ ] Processo iterativo garantido
-- [ ] Motivações das mudanças registradas
-- [ ] Alinhamento validado com matriz de validação
-- [ ] Aprendizados documentados
+## Adaptation Examples
+
+- **Infrastructure as Code:**
+  - Adapt examples for Terraform, Crossplane, ArgoCD
+  - Maintain principles of living documentation and iterative validation
+
+- **Software Development:**
+  - Customize templates for APIs, microservices
+  - Preserve the cycle of generation, validation, and learning
+
+- **Prompt Engineering for AI:**
+  - Adapt examples for prompt generation
+  - Maintain alignment with octade and continuous validation
 
 ---
 
-> **Nota:** Este guia deve evoluir continuamente com base nas adaptações realizadas e nas lições aprendidas.
+## Guiding Questions
+- Does this adaptation maintain the essential principles?
+- Which elements were modified and why?
+- How to ensure continuous validation and learning?
+- What risks or limitations does the adaptation introduce?
+- How to document and share the learnings?
+
+---
+
+## Adaptation Validation Checklist
+- [ ] Conceptual octade preserved
+- [ ] Living documentation maintained
+- [ ] Iterative process ensured
+- [ ] Motivations for changes recorded
+- [ ] Alignment validated with validation matrix
+- [ ] Learnings documented
+
+---
+
+> **Note:** This guide should continuously evolve based on adaptations made and lessons learned.

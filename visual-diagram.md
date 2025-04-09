@@ -1,6 +1,6 @@
-# Diagrama Visual do Framework Kosmologogenesis
+# Visual Diagram of the Kosmologogenesis Framework
 
-## Estrutura Octádica e Interconexões
+## Octadic Structure and Interconnections
 
 ```mermaid
 graph TD
@@ -14,26 +14,26 @@ graph TD
     classDef synesis fill:#d5f9f9,stroke:#333,stroke-width:1px
     classDef prompt fill:#ffffff,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
 
-    KOSMOS[KOSMOS<br>Visão Holística] --> LOGOS[LOGOS<br>Estruturação Metodológica]
-    LOGOS --> GENESIS[GENESIS<br>Geração Concreta]
+    KOSMOS[KOSMOS<br>Holistic Vision] --> LOGOS[LOGOS<br>Methodological Structuring]
+    LOGOS --> GENESIS[GENESIS<br>Concrete Generation]
     
-    CHRONOS[CHRONOS<br>Dimensão Temporal] --> KOSMOS
+    CHRONOS[CHRONOS<br>Temporal Dimension] --> KOSMOS
     CHRONOS --> LOGOS
     CHRONOS --> GENESIS
     
-    AETHER[AETHER<br>Meio de Conexão] --> KOSMOS
+    AETHER[AETHER<br>Connection Medium] --> KOSMOS
     AETHER --> LOGOS
     AETHER --> GENESIS
     
-    DYNAMIS[DYNAMIS<br>Força Energética] --> KOSMOS
+    DYNAMIS[DYNAMIS<br>Energetic Force] --> KOSMOS
     DYNAMIS --> LOGOS
     DYNAMIS --> GENESIS
     
-    TELOS[TELOS<br>Propósito Direcional] --> KOSMOS
+    TELOS[TELOS<br>Directional Purpose] --> KOSMOS
     TELOS --> LOGOS
     TELOS --> GENESIS
     
-    SYNESIS[SYNESIS<br>Integração Cognitiva] --> KOSMOS
+    SYNESIS[SYNESIS<br>Cognitive Integration] --> KOSMOS
     SYNESIS --> LOGOS
     SYNESIS --> GENESIS
     
@@ -44,7 +44,7 @@ graph TD
     PROMPT1 -.-> LOGOS
     PROMPT2 -.-> GENESIS
     
-    SPOROS[PROMPT SPOROS<br>Resultado Final]
+    SPOROS[PROMPT SPOROS<br>Final Result]
     
     PROMPT2 --> SPOROS
     
@@ -61,32 +61,32 @@ graph TD
     class PROMPT2 prompt
 ```
 
-## Ciclo de Evolução Consciente
+## Conscious Evolution Cycle
 
 ```mermaid
 flowchart TD
     classDef phase fill:#f9f9f9,stroke:#333,stroke-width:1px
     
-    A[Documentação e<br>Rastreabilidade] --> B[Reflexão e<br>Auto-Análise]
-    B --> C[Organização e<br>Categorização]
-    C --> D[Priorização e<br>Focalização Energética]
-    D --> E[Planejamento<br>Integrativo]
-    E --> F[Execução<br>Consciente]
+    A[Documentation and<br>Traceability] --> B[Reflection and<br>Self-Analysis]
+    B --> C[Organization and<br>Categorization]
+    C --> D[Prioritization and<br>Energy Focusing]
+    D --> E[Integrative<br>Planning]
+    E --> F[Conscious<br>Execution]
     F --> A
     
-    SYNESIS[SYNESIS<br>Integração Cognitiva] --> A
-    KOSMOS[KOSMOS<br>Visão Holística] --> B
-    LOGOS[LOGOS<br>Estruturação Metodológica] --> C
-    DYNAMIS[DYNAMIS<br>Força Energética] --> D
-    TELOS[TELOS<br>Propósito Direcional] --> E
-    GENESIS[GENESIS<br>Geração Concreta] --> F
-    CHRONOS[CHRONOS<br>Dimensão Temporal] -.-> A
+    SYNESIS[SYNESIS<br>Cognitive Integration] --> A
+    KOSMOS[KOSMOS<br>Holistic Vision] --> B
+    LOGOS[LOGOS<br>Methodological Structuring] --> C
+    DYNAMIS[DYNAMIS<br>Energetic Force] --> D
+    TELOS[TELOS<br>Directional Purpose] --> E
+    GENESIS[GENESIS<br>Concrete Generation] --> F
+    CHRONOS[CHRONOS<br>Temporal Dimension] -.-> A
     CHRONOS -.-> B
     CHRONOS -.-> C
     CHRONOS -.-> D
     CHRONOS -.-> E
     CHRONOS -.-> F
-    AETHER[AETHER<br>Meio de Conexão] -.-> A
+    AETHER[AETHER<br>Connection Medium] -.-> A
     AETHER -.-> B
     AETHER -.-> C
     AETHER -.-> D
@@ -101,16 +101,16 @@ flowchart TD
     class F phase
 ```
 
-## Fases do Processo
+## Process Phases
 
 ```mermaid
 graph LR
     classDef phase fill:#f5f5f5,stroke:#333,stroke-width:1px
     
-    A[FASE 1<br>Análise e Empatia] --> B[FASE 2<br>Estruturação do<br>Prompt Sporos]
-    B --> C[FASE 3<br>Auto-Avaliação]
-    C --> D[FASE 4<br>Refinamento e<br>Síntese]
-    D --> E[FASE 5<br>Entrega e<br>Ativação]
+    A[PHASE 1<br>Analysis and Empathy] --> B[PHASE 2<br>Structuring of<br>Sporos Prompt]
+    B --> C[PHASE 3<br>Self-Assessment]
+    C --> D[PHASE 4<br>Refinement and<br>Synthesis]
+    D --> E[PHASE 5<br>Delivery and<br>Activation]
     E -.-> A
     
     KOSMOS[KOSMOS] -.-> A

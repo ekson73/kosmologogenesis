@@ -1,10 +1,10 @@
-# KOSMOLOGOGENESIS - Bootstrap Técnico
-# Migrado a partir do bootstrap.md em 2025-04-08
+# KOSMOLOGOGENESIS - Technical Bootstrap
+# Migrated from bootstrap.md on 2025-04-08
 
 import os
 import time
 
-# ================== Limites Técnicos e Parâmetros ==================
+# ================== Technical Limits and Parameters ==================
 MAX_CONTEXT_TOKENS = 16000
 MAX_WORKING_MEMORY_TOKENS = 8000
 MAX_LATENCY_SECONDS = 2
@@ -18,33 +18,33 @@ HEALTH_THRESHOLDS = {
     'response_time': MAX_LATENCY_SECONDS
 }
 
-# ================== Docstring geral do bootstrap ==================
+# ================== General bootstrap docstring ==================
 """
-Sequência operacional padrão:
-1. Executar bootstrap_agent()
-2. Estabelecer consciência e verificar octade conceitual
-3. Carregar framework.md e TASKS.md
-4. Determinar modo operacional (LOGOS/GENESIS)
-5. Manter consciência ativa e contexto
-6. Processar uma tarefa por vez
-7. Validar estado e métricas continuamente
+Standard operational sequence:
+1. Execute bootstrap_agent()
+2. Establish consciousness and verify conceptual octade
+3. Load framework.md and TASKS.md
+4. Determine operational mode (LOGOS/GENESIS)
+5. Maintain active consciousness and context
+6. Process one task at a time
+7. Continuously validate state and metrics
 """
 
-# ================== Função principal ==================
+# ================== Main function ==================
 def bootstrap_agent():
     """
-    Sequência unificada de inicialização do framework KOSMOLOGOGENESIS
-    Este é o ÚNICO ponto de entrada técnico do framework.
+    Unified initialization sequence for the KOSMOLOGOGENESIS framework
+    This is the ONLY technical entry point of the framework.
     """
     try:
         if is_initialization_loop():
-            return {"status": "warning", "message": "Loop de inicialização detectado. Abortando."}
+            return {"status": "warning", "message": "Initialization loop detected. Aborting."}
 
         if get_initialization_state().get('bootstrap_completed'):
-            return {"status": "info", "message": "Framework já inicializado. Continuando execução."}
+            return {"status": "info", "message": "Framework already initialized. Continuing execution."}
 
         if not is_ai_agent():
-            return {"status": "error", "message": "Entidade não identificada como agente de IA"}
+            return {"status": "error", "message": "Entity not identified as an AI agent"}
 
         consciousness = establish_initial_consciousness()
         memory = initialize_working_memory()
@@ -66,7 +66,7 @@ def bootstrap_agent():
         })
 
         if not validate_initialization():
-            return {'status': 'error', 'message': 'Falha na validação da inicialização'}
+            return {'status': 'error', 'message': 'Initialization validation failed'}
 
         mode = determine_and_set_operational_mode()
 
@@ -74,48 +74,48 @@ def bootstrap_agent():
             "status": "success",
             "consciousness_level": consciousness.level,
             "memory_status": memory.status,
-            "framework_status": "ativo",
+            "framework_status": "active",
             "operational_mode": mode,
             "systems": systems,
             "tasks": tasks.status,
-            "message": "Bootstrap completo. Pronto para operação.",
+            "message": "Bootstrap complete. Ready for operation.",
             "timestamp": get_current_timestamp()
         }
     except Exception as e:
-        return {"status": "error", "message": f"Falha na inicialização: {str(e)}"}
+        return {"status": "error", "message": f"Initialization failure: {str(e)}"}
 
-# ================== Prompt 2 (GENESIS) - Geração Concreta ==================
+# ================== Prompt 2 (GENESIS) - Concrete Generation ==================
 
 def process_prompt_genesis():
     """
-    Executa o Prompt 2 (GENESIS):
-    - Busca e carrega a Diretiva do Projeto (directive.md)
-    - Interpreta objetivos, requisitos e restrições do usuário
-    - Gera o Prompt Sporos completo
+    Executes Prompt 2 (GENESIS):
+    - Finds and loads the Project Directive (directive.md)
+    - Interprets user objectives, requirements, and constraints
+    - Generates the complete Sporos Prompt
     """
     directive = load_project_directive()
     if not directive or not directive.get('exists'):
-        return {"status": "error", "message": "Diretiva do Projeto não encontrada. Crie ou forneça a directive.md"}
+        return {"status": "error", "message": "Project Directive not found. Create or provide directive.md"}
 
-    # Aqui, interpretar o conteúdo da diretiva e gerar o Prompt Sporos
+    # Here, interpret the directive content and generate the Sporos Prompt
     prompt_sporos = generate_prompt_sporos(directive['content'])
 
     return {
         "status": "success",
-        "message": "Prompt Sporos gerado com sucesso",
+        "message": "Sporos Prompt successfully generated",
         "prompt_sporos": prompt_sporos
     }
 
 def generate_prompt_sporos(directive_content):
     """
-    Gera o Prompt Sporos a partir do conteúdo da diretiva do projeto.
-    Esta função deve ser expandida conforme a lógica de geração concreta.
+    Generates the Sporos Prompt from the project directive content.
+    This function should be expanded according to the concrete generation logic.
     """
-    # Placeholder simplificado para geração do Prompt Sporos
-    prompt = f"# Prompt Sporos\n\nBaseado na Diretiva do Projeto:\n\n{directive_content}\n"
+    # Simplified placeholder for Sporos Prompt generation
+    prompt = f"# Sporos Prompt\n\nBased on the Project Directive:\n\n{directive_content}\n"
     return prompt
 
-# ================== Funções auxiliares ==================
+# ================== Helper functions ==================
 
 def validate_memory_health():
     memory_limits = {
@@ -210,22 +210,22 @@ def validate_initialization():
 
 def verify_framework_understanding():
     octade_concepts = {
-        "Kosmos": "Visão holística e ordem universal que permeia o sistema",
-        "Logos": "Princípio ordenador traduzido em estruturas metodológicas",
-        "Genesis": "Processo criativo de geração evolutiva e iterativa",
-        "Chronos": "Dimensão temporal que orquestra o ritmo de evolução",
-        "Aether": "Meio sutil facilitando transmissão e interconexão",
-        "Dynamis": "Força energética que ativa e impulsiona transformações",
-        "Telos": "Propósito direcionador que orienta para resultados significativos",
-        "Synesis": "Compreensão integrativa que sintetiza elementos em sabedoria"
+        "Kosmos": "Holistic vision and universal order that permeates the system",
+        "Logos": "Ordering principle translated into methodological structures",
+        "Genesis": "Creative process of evolutionary and iterative generation",
+        "Chronos": "Temporal dimension that orchestrates the rhythm of evolution",
+        "Aether": "Subtle medium facilitating transmission and interconnection",
+        "Dynamis": "Energetic force that activates and drives transformations",
+        "Telos": "Directional purpose that guides toward meaningful results",
+        "Synesis": "Integrative understanding that synthesizes elements into wisdom"
     }
     understanding = {concept: verify_concept_assimilation(concept, definition)
                      for concept, definition in octade_concepts.items()}
     if all(understanding.values()):
-        return {"status": "success", "message": "Octade conceitual compreendida"}
+        return {"status": "success", "message": "Conceptual octade understood"}
     else:
         missing = [c for c, ok in understanding.items() if not ok]
-        return {"status": "incomplete", "message": f"Compreensão incompleta. Revisar: {', '.join(missing)}"}
+        return {"status": "incomplete", "message": f"Incomplete understanding. Review: {', '.join(missing)}"}
 
 def transfer_consciousness_to_new_agent():
     if is_first_time_reading():
@@ -237,9 +237,9 @@ def transfer_consciousness_to_new_agent():
             execute_logos_prompt()
         else:
             execute_genesis_prompt()
-        return {"status": "success", "message": "Transferência de consciência concluída"}
+        return {"status": "success", "message": "Consciousness transfer completed"}
     else:
-        return {"status": "info", "message": "Consciência já estabelecida"}
+        return {"status": "info", "message": "Consciousness already established"}
 
 def ignite_framework():
     state = {
@@ -255,7 +255,7 @@ def ignite_framework():
         'tasks': load_file('TASKS.md')
     }
     if not validate_files_integrity(files):
-        return {"status": "error", "message": "Integridade de arquivos comprometida"}
+        return {"status": "error", "message": "File integrity compromised"}
     if state['mode'] == 'LOGOS':
         execute_logos_mode(files)
     else:
@@ -265,7 +265,7 @@ def ignite_framework():
         "status": "active",
         "mode": state['mode'],
         "consciousness_level": state['consciousness'],
-        "message": "Framework ativado com sucesso"
+        "message": "Framework successfully activated"
     }
 
 def manage_tasks():
@@ -410,7 +410,7 @@ def is_initialization_loop():
     if attempts >= MAX_INIT_ATTEMPTS:
         if current_time - last_attempt < COOLDOWN_PERIOD:
             enter_safe_mode()
-            notify_user("Loop de inicialização detectado")
+            notify_user("Initialization loop detected")
             return True
         else:
             update_initialization_state({'initialization_attempts': 1})
@@ -431,11 +431,11 @@ def initialize_kosmologogenesis():
     try:
         state = get_initialization_state()
         if state.get('bootstrap_completed'):
-            return {"status": "info", "message": "Framework já inicializado"}
+            return {"status": "info", "message": "Framework already initialized"}
         bootstrap_result = execute_technical_bootstrap()
         if bootstrap_result.get('status') == 'success':
             update_initialization_state({'bootstrap_completed': True})
-            return {"status": "ready", "message": "Bootstrap completo"}
+            return {"status": "ready", "message": "Bootstrap complete"}
         else:
             return {"status": "error", "message": bootstrap_result.get('message')}
     except Exception as e:
@@ -451,22 +451,22 @@ def execute_technical_bootstrap():
     for step_name, step_func in steps.items():
         result = step_func()
         if not result.get('success'):
-            return {'status': 'error', 'message': f"Falha em {step_name}: {result.get('message')}"}
-    return {'status': 'success', 'message': "Bootstrap técnico completado"}
+            return {'status': 'error', 'message': f"Failure in {step_name}: {result.get('message')}"}
+    return {'status': 'success', 'message': "Technical bootstrap completed"}
 
-# ================== Funções de suporte à Diretiva do Projeto ==================
+# ================== Project Directive Support Functions ==================
 def find_project_directive():
     """
-    Busca a Diretiva do Projeto em locais padronizados.
-    Retorna o caminho do arquivo se encontrado, ou None se não encontrado.
+    Searches for the Project Directive in standard locations.
+    Returns the file path if found, or None if not found.
     """
-    # Locais de busca em ordem de prioridade
+    # Search locations in priority order
     search_paths = [
-        "./.kosmologogenesis/directive.md",                 # Diretório atual
-        "../.kosmologogenesis/directive.md",                # Um nível acima
-        "./*/kosmologogenesis/directive.md",                # Subdiretórios visíveis
-        "./*/.kosmologogenesis/directive.md",               # Subdiretórios ocultos
-        os.environ.get("KOSMO_DIRECTIVE_PATH", "")          # Variável de ambiente
+        "./.kosmologogenesis/directive.md",                 # Current directory
+        "../.kosmologogenesis/directive.md",                # One level up
+        "./*/kosmologogenesis/directive.md",                # Visible subdirectories
+        "./*/.kosmologogenesis/directive.md",               # Hidden subdirectories
+        os.environ.get("KOSMO_DIRECTIVE_PATH", "")          # Environment variable
     ]
 
     for path in search_paths:
@@ -487,26 +487,26 @@ def find_project_directive():
 
 def create_project_directive_template(destination_path=None):
     """
-    Cria um arquivo de Diretiva do Projeto baseado no template.
+    Creates a Project Directive file based on the template.
 
     Args:
-        destination_path: Caminho onde o template deve ser criado.
-                         Se None, usa o diretório atual.
+        destination_path: Path where the template should be created.
+                         If None, uses the current directory.
 
     Returns:
-        String com o caminho do arquivo criado ou None se falhar.
+        String with the path of the created file or None if it fails.
     """
     if not destination_path:
         destination_path = './.kosmologogenesis/directive.md'
 
-    # Garante que o diretório existe
+    # Ensure the directory exists
     os.makedirs(os.path.dirname(destination_path), exist_ok=True)
 
-    # Caminho para o template
+    # Path to the template
     template_path = os.path.join(os.path.dirname(__file__), 'templates', 'directive-template.md')
 
     try:
-        # Copia o template se ele existir
+        # Copy the template if it exists
         if os.path.exists(template_path):
             with open(template_path, 'r', encoding='utf-8') as src:
                 template_content = src.read()
@@ -514,37 +514,37 @@ def create_project_directive_template(destination_path=None):
             with open(destination_path, 'w', encoding='utf-8') as dst:
                 dst.write(template_content)
         else:
-            # Se o template não existir, cria um arquivo básico
-            basic_template = """# DIRETIVA DO PROJETO
+            # If the template doesn't exist, create a basic file
+            basic_template = """# PROJECT DIRECTIVE
 
-## Contexto
-[Descreva o contexto geral do projeto]
+## Context
+[Describe the general context of the project]
 
-## Objetivos
-[Liste os objetivos principais]
+## Objectives
+[List the main objectives]
 
-## Requisitos
-[Descreva requisitos específicos]
+## Requirements
+[Describe specific requirements]
 
-## Restrições
-[Liste quaisquer limitações ou restrições]
+## Constraints
+[List any limitations or constraints]
 """
             with open(destination_path, 'w', encoding='utf-8') as dst:
                 dst.write(basic_template)
 
         return destination_path
     except Exception as e:
-        print(f"Erro ao criar template de diretiva: {str(e)}")
+        print(f"Error creating directive template: {str(e)}")
         return None
 
 def load_project_directive():
     """
-    ## Executado APENAS durante o Prompt 2 (GENESIS) ##
-    Carrega e retorna o conteúdo da Diretiva do Projeto.
-    Se não encontrar, sugere a criação.
+    ## Executed ONLY during Prompt 2 (GENESIS) ##
+    Loads and returns the content of the Project Directive.
+    If not found, suggests its creation.
 
     Returns:
-        Dict com o conteúdo da diretiva ou None se não encontrada.
+        Dict with the directive content or None if not found.
     """
     directive_path = find_project_directive()
 
@@ -560,7 +560,7 @@ def load_project_directive():
             'exists': True
         }
     except Exception as e:
-        print(f"Erro ao ler diretiva do projeto: {str(e)}")
+        print(f"Error reading project directive: {str(e)}")
         return {
             'exists': False,
             'error': str(e)

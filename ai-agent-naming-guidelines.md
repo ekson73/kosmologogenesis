@@ -1,125 +1,125 @@
-# Diretrizes de Nomenclatura para Agentes de IA
+# Naming Guidelines for AI Agents
 
-Este documento estabelece padrões consistentes para a nomenclatura de agentes de IA, comandos, funções e outros elementos do sistema, garantindo clareza, consistência e alinhamento com os princípios do framework KOSMOLOGOGENESIS.
+This document establishes consistent standards for naming AI agents, commands, functions, and other system elements, ensuring clarity, consistency, and alignment with the principles of the KOSMOLOGOGENESIS framework.
 
-## Princípios Gerais de Nomenclatura
+## General Naming Principles
 
-1. **Clareza e Especificidade**: Os nomes devem comunicar claramente o propósito ou função.
-2. **Consistência**: Manter padrões consistentes em todo o projeto.
-3. **Brevidade com Contexto**: Nomes concisos mas suficientemente descritivos.
-4. **Hierarquia Refletida**: A nomenclatura deve refletir hierarquias ou relacionamentos.
-5. **Princípios Cósmicos Incorporados**: Quando apropriado, refletir os princípios cósmicos do framework.
+1. **Clarity and Specificity**: Names should clearly communicate purpose or function.
+2. **Consistency**: Maintain consistent patterns throughout the project.
+3. **Brevity with Context**: Concise names but sufficiently descriptive.
+4. **Reflected Hierarchy**: Nomenclature should reflect hierarchies or relationships.
+5. **Cosmic Principles Incorporated**: When appropriate, reflect the cosmic principles of the framework.
 
-## Padrões de Nomenclatura por Tipo
+## Naming Standards by Type
 
-### Agentes de IA
+### AI Agents
 
-- **Formato**: `[Domínio][Função][Número de Versão]`
-- **Exemplos**: 
+- **Format**: `[Domain][Function][Version Number]`
+- **Examples**: 
   - `InfrastructureAnalyst-v1`
   - `DocumentationGenerator-v2`
   - `SystemArchitect-v1`
 
-### Comandos e Instruções
+### Commands and Instructions
 
-- **Formato**: `[Verbo][Objeto][Qualificador]`
-- **Exemplos**:
+- **Format**: `[Verb][Object][Qualifier]`
+- **Examples**:
   - `CreateInventoryDocument`
   - `AnalyzeSystemDependencies`
   - `OptimizeNetworkConfiguration`
 
-### Arquivos de Documentação
+### Documentation Files
 
-- **Formato**: `[tipo]-[domínio]-[especificador].md`
-- **Exemplos**:
+- **Format**: `[type]-[domain]-[specifier].md`
+- **Examples**:
   - `inventory-network-topology.md`
   - `plan-deployment-sequence.md`
   - `analysis-system-dependencies.md`
 
-### Variáveis e Parâmetros
+### Variables and Parameters
 
-- **Formato**: `[escopo][Descrição]`
-- **Exemplos**:
+- **Format**: `[scope][Description]`
+- **Examples**:
   - `globalConfigVersion`
   - `localCacheTimeout`
   - `systemStateIndicator`
 
-## Aplicação dos Princípios Cósmicos
+## Application of Cosmic Principles
 
-### Visão Holística (Kosmos)
+### Holistic Vision (Kosmos)
 
-Ao nomear componentes que representam visões abrangentes do sistema, utilize prefixos ou sufixos que indiquem esta natureza:
+When naming components that represent comprehensive views of the system, use prefixes or suffixes that indicate this nature:
 
-- **Prefixos**: `holistic`, `integrated`, `unified`
-- **Exemplos**: `holisticSystemView`, `integratedAnalysis`
+- **Prefixes**: `holistic`, `integrated`, `unified`
+- **Examples**: `holisticSystemView`, `integratedAnalysis`
 
-### Estrutura Metodológica (Logos)
+### Methodological Structure (Logos)
 
-Para elementos relacionados à estruturação lógica:
+For elements related to logical structuring:
 
-- **Prefixos**: `structured`, `logical`, `methodical`
-- **Exemplos**: `structuredPlanGenerator`, `logicalComponentMap`
+- **Prefixes**: `structured`, `logical`, `methodical`
+- **Examples**: `structuredPlanGenerator`, `logicalComponentMap`
 
-### Criação e Geração (Genesis)
+### Creation and Generation (Genesis)
 
-Para componentes relacionados à criação ou geração:
+For components related to creation or generation:
 
-- **Prefixos**: `create`, `generate`, `build`
-- **Exemplos**: `contentGenerator`, `infrastructureBuilder`
+- **Prefixes**: `create`, `generate`, `build`
+- **Examples**: `contentGenerator`, `infrastructureBuilder`
 
-### Dimensão Temporal (Chronos)
+### Temporal Dimension (Chronos)
 
-Para elementos relacionados ao tempo ou sequenciamento:
+For elements related to time or sequencing:
 
-- **Prefixos**: `temporal`, `sequential`, `phased`
-- **Exemplos**: `temporalExecutionPlan`, `sequentialDeployment`
+- **Prefixes**: `temporal`, `sequential`, `phased`
+- **Examples**: `temporalExecutionPlan`, `sequentialDeployment`
 
-### Interconexão (Aether)
+### Interconnection (Aether)
 
-Para componentes que facilitam conexões ou comunicação:
+For components that facilitate connections or communication:
 
-- **Prefixos**: `connector`, `bridge`, `relay`
-- **Exemplos**: `systemConnector`, `dataBridge`
+- **Prefixes**: `connector`, `bridge`, `relay`
+- **Examples**: `systemConnector`, `dataBridge`
 
-### Energia e Transformação (Dynamis)
+### Energy and Transformation (Dynamis)
 
-Para elementos relacionados à transformação ou ativação:
+For elements related to transformation or activation:
 
-- **Prefixos**: `transform`, `activate`, `energize`
-- **Exemplos**: `dataTransformer`, `systemActivator`
+- **Prefixes**: `transform`, `activate`, `energize`
+- **Examples**: `dataTransformer`, `systemActivator`
 
-### Propósito e Direção (Telos)
+### Purpose and Direction (Telos)
 
-Para componentes relacionados a objetivos ou direcionamento:
+For components related to goals or direction:
 
-- **Prefixos**: `goal`, `purpose`, `target`
-- **Exemplos**: `goalOptimizer`, `purposeAligner`
+- **Prefixes**: `goal`, `purpose`, `target`
+- **Examples**: `goalOptimizer`, `purposeAligner`
 
-### Integração Cognitiva (Synesis)
+### Cognitive Integration (Synesis)
 
-Para elementos relacionados à integração de conhecimento:
+For elements related to knowledge integration:
 
-- **Prefixos**: `integrate`, `synthesize`, `comprehend`
-- **Exemplos**: `knowledgeIntegrator`, `insightSynthesizer`
+- **Prefixes**: `integrate`, `synthesize`, `comprehend`
+- **Examples**: `knowledgeIntegrator`, `insightSynthesizer`
 
-## Convenções de Documentação
+## Documentation Conventions
 
-Ao documentar agentes, comandos ou outros elementos nomeados:
+When documenting agents, commands, or other named elements:
 
-1. **Explicação de Propósito**: Inclua uma breve descrição do propósito do elemento.
-2. **Relações**: Documente como o elemento se relaciona com outros no sistema.
-3. **Princípios Aplicados**: Mencione quais princípios cósmicos foram aplicados na concepção do elemento.
-4. **Exemplos de Uso**: Forneça exemplos concretos de como o elemento deve ser utilizado.
+1. **Purpose Explanation**: Include a brief description of the element's purpose.
+2. **Relationships**: Document how the element relates to others in the system.
+3. **Applied Principles**: Mention which cosmic principles were applied in the element's design.
+4. **Usage Examples**: Provide concrete examples of how the element should be used.
 
-## Processo de Evolução de Nomenclatura
+## Nomenclature Evolution Process
 
-A nomenclatura deve evoluir junto com o projeto, seguindo estas diretrizes:
+Nomenclature should evolve along with the project, following these guidelines:
 
-1. **Versionamento**: Ao evoluir um agente ou componente, incremente sua versão.
-2. **Documentação de Mudanças**: Documente alterações na nomenclatura e suas justificativas.
-3. **Mapeamento de Legado**: Mantenha um mapeamento entre nomenclaturas antigas e novas.
-4. **Revisão Periódica**: Revise periodicamente a nomenclatura para garantir consistência.
+1. **Versioning**: When evolving an agent or component, increment its version.
+2. **Change Documentation**: Document changes in nomenclature and their justifications.
+3. **Legacy Mapping**: Maintain a mapping between old and new nomenclatures.
+4. **Periodic Review**: Periodically review nomenclature to ensure consistency.
 
 ---
 
-Estas diretrizes devem ser aplicadas em todo o projeto para garantir consistência, claridade e alinhamento com os princípios do framework KOSMOLOGOGENESIS. Ajustes podem ser feitos conforme necessário, desde que documentados e comunicados à equipe. 
+These guidelines should be applied throughout the project to ensure consistency, clarity, and alignment with the principles of the KOSMOLOGOGENESIS framework. Adjustments may be made as necessary, as long as they are documented and communicated to the team.

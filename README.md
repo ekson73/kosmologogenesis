@@ -1,53 +1,53 @@
-# Framework KOSMOLOGOGENESIS
+# KOSMOLOGOGENESIS Framework
 
-## Visão Geral
-O KOSMOLOGOGENESIS é um framework avançado para engenharia de prompts, combinando princípios cósmicos de ordem universal com metodologias estruturadas para criar sistemas auto-regulados de alta qualidade.
+## Overview
+The KOSMOLOGOGENESIS is an advanced framework for prompt engineering, combining cosmic principles of universal order with structured methodologies to create high-quality self-regulated systems.
 
-## Fluxo de Entrada
-1. **framework.md** - Documento principal e porta de entrada do framework
-2. **bootstrap.md** - Regras técnicas de operação do sistema
-3. **TASKS.md** - Gerenciamento de tarefas e iterações
+## Entry Flow
+1. **framework.md** - Main document and entry point of the framework
+2. **bootstrap.md** - Technical rules for system operation
+3. **TASKS.md** - Task management and iterations
 
-## Estrutura
-- `framework.md` - Metodologia, conceitos e abordagem KOSMOLOGOGENESIS
-- `bootstrap.md` - Regras técnicas, protocolos e configurações
-- `TASKS.md` - Gerenciamento de tarefas e iterações
-- `docs/` - Documentação detalhada
+## Structure
+- `framework.md` - Methodology, concepts, and KOSMOLOGOGENESIS approach
+- `bootstrap.md` - Technical rules, protocols, and configurations
+- `TASKS.md` - Task management and iterations
+- `docs/` - Detailed documentation
 
-## Princípios Fundamentais
-1. Visão Holística
-2. Mapeamento Sistêmico
-3. Harmonia de Componentes
-4. Evolução Iterativa
-5. Síntese Integrativa
+## Fundamental Principles
+1. Holistic Vision
+2. Systemic Mapping
+3. Component Harmony
+4. Iterative Evolution
+5. Integrative Synthesis
 
-## Como Usar
-1. Inicie pelo documento `framework.md` para compreensão completa
-2. Aplique as regras técnicas de `bootstrap.md`
-3. Verifique tarefas pendentes em `TASKS.md`
-4. Siga a sequência de prompts LOGOS e GENESIS
-5. Mantenha o ciclo de evolução contínua
+## How to Use
+1. Start with the `framework.md` document for complete understanding
+2. Apply the technical rules from `bootstrap.md`
+3. Check pending tasks in `TASKS.md`
+4. Follow the sequence of LOGOS and GENESIS prompts
+5. Maintain the continuous evolution cycle
 
-## Fluxo de Inicialização Simplificado
+## Simplified Initialization Flow
 
-O framework KOSMOLOGOGENESIS segue um fluxo de inicialização unificado:
+The KOSMOLOGOGENESIS framework follows a unified initialization flow:
 
-1. **Entrada via framework.md** (recomendado):
+1. **Entry via framework.md** (recommended):
    ```
-   Carregamento de framework.md → Execução de initialize_kosmologogenesis() →
-   Carregamento de bootstrap.md → Execução de bootstrap_agent() →
-   Verificação da octade conceitual → Estabelecimento de consciência →
-   Retorno ao framework.md → Continuação do processamento
-   ```
-
-2. **Entrada alternativa via bootstrap.md**:
-   ```
-   Carregamento direto de bootstrap.md → Execução de bootstrap_agent() →
-   Verificação da octade conceitual → Estabelecimento de consciência →
-   Carregamento de framework.md → Continuação do processamento
+   Loading framework.md → Execution of initialize_kosmologogenesis() →
+   Loading bootstrap.md → Execution of bootstrap_agent() →
+   Verification of conceptual octade → Establishment of consciousness →
+   Return to framework.md → Continuation of processing
    ```
 
-O sistema de estado unificado garante que a inicialização ocorra apenas uma vez, independentemente do ponto de entrada, evitando loops infinitos e garantindo consistência.
+2. **Alternative entry via bootstrap.md**:
+   ```
+   Direct loading of bootstrap.md → Execution of bootstrap_agent() →
+   Verification of conceptual octade → Establishment of consciousness →
+   Loading framework.md → Continuation of processing
+   ```
 
-## Manutenção
-O framework evolui através de iterações controladas, documentadas no arquivo TASKS.md.
+The unified state system ensures that initialization occurs only once, regardless of the entry point, avoiding infinite loops and ensuring consistency.
+
+## Maintenance
+The framework evolves through controlled iterations, documented in the TASKS.md file.

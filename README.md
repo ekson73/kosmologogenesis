@@ -1,2 +1,2 @@
-# logogenesis-prompt-framework
-Logogenesis Prompt Framework
+# kosmologogenesis-prompt-framework
+Kosmologogenesis Prompt Framework

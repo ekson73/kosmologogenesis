@@ -538,9 +538,27 @@ Para cada categoria de suposições, o framework implementa mecanismos de valida
    - Medição de impacto
 
 ### Necessidades do Usuário:
-<!-- INÍCIO DA SEÇÃO IMUTÁVEL - NÃO MODIFICAR - CONTEÚDO FORNECIDO PELO USUÁRIO -->
-> "Será preenchido posteriormente pelo usuário antes de gerar o prompt-sporos."
-<!-- FIM DA SEÇÃO IMUTÁVEL - NÃO MODIFICAR - CONTEÚDO FORNECIDO PELO USUÁRIO -->
+<!-- INÍCIO DA SEÇÃO IMUTÁVEL - NÃO MODIFICAR - INSTRUÇÃO PARA AGENTES DE IA -->
+> O conteúdo desta seção deve ser localizado na Diretiva do Projeto.
+> 
+> Procure por um arquivo `.kosmologogenesis/directive.md` no projeto do usuário.
+> Se não localizado, solicite ao usuário o caminho para a Diretiva do Projeto
+> ou peça para criar uma usando o template abaixo:
+> 
+> # DIRETIVA DO PROJETO
+> 
+> ## Contexto
+> [Descreva o contexto geral do projeto]
+> 
+> ## Objetivos
+> [Liste os objetivos principais]
+> 
+> ## Requisitos
+> [Descreva requisitos específicos]
+> 
+> ## Restrições
+> [Liste quaisquer limitações ou restrições]
+<!-- FIM DA SEÇÃO IMUTÁVEL -->
 
 ### Diretrizes de Documentação:
 

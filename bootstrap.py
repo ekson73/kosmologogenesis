@@ -1,6 +1,7 @@
 # KOSMOLOGOGENESIS - Bootstrap Técnico
 # Migrado a partir do bootstrap.md em 2025-04-08
 
+import os
 import time
 
 # ================== Limites Técnicos e Parâmetros ==================
@@ -421,3 +422,114 @@ def execute_technical_bootstrap():
         if not result.get('success'):
             return {'status': 'error', 'message': f"Falha em {step_name}: {result.get('message')}"}
     return {'status': 'success', 'message': "Bootstrap técnico completado"}
+
+# ================== Funções de suporte à Diretiva do Projeto ==================
+def find_project_directive():
+    """
+    Busca a Diretiva do Projeto em locais padronizados.
+    Retorna o caminho do arquivo se encontrado, ou None se não encontrado.
+    """
+    # Locais de busca em ordem de prioridade
+    search_paths = [
+        "./.kosmologogenesis/directive.md",                 # Diretório atual
+        "../.kosmologogenesis/directive.md",                # Um nível acima
+        "./*/kosmologogenesis/directive.md",                # Subdiretórios visíveis
+        "./*/.kosmologogenesis/directive.md",               # Subdiretórios ocultos
+        os.environ.get("KOSMO_DIRECTIVE_PATH", "")          # Variável de ambiente
+    ]
+
+    for path in search_paths:
+        # Skip empty paths (like if the env var isn't set)
+        if not path:
+            continue
+
+        # Handle glob patterns
+        if '*' in path:
+            import glob
+            matching_paths = glob.glob(path)
+            if matching_paths:
+                return matching_paths[0]  # Return first match
+        elif os.path.exists(path):
+            return path
+
+    return None
+
+def create_project_directive_template(destination_path=None):
+    """
+    Cria um arquivo de Diretiva do Projeto baseado no template.
+
+    Args:
+        destination_path: Caminho onde o template deve ser criado.
+                         Se None, usa o diretório atual.
+
+    Returns:
+        String com o caminho do arquivo criado ou None se falhar.
+    """
+    if not destination_path:
+        destination_path = './.kosmologogenesis/directive.md'
+
+    # Garante que o diretório existe
+    os.makedirs(os.path.dirname(destination_path), exist_ok=True)
+
+    # Caminho para o template
+    template_path = os.path.join(os.path.dirname(__file__), 'templates', 'directive-template.md')
+
+    try:
+        # Copia o template se ele existir
+        if os.path.exists(template_path):
+            with open(template_path, 'r', encoding='utf-8') as src:
+                template_content = src.read()
+
+            with open(destination_path, 'w', encoding='utf-8') as dst:
+                dst.write(template_content)
+        else:
+            # Se o template não existir, cria um arquivo básico
+            basic_template = """# DIRETIVA DO PROJETO
+
+## Contexto
+[Descreva o contexto geral do projeto]
+
+## Objetivos
+[Liste os objetivos principais]
+
+## Requisitos
+[Descreva requisitos específicos]
+
+## Restrições
+[Liste quaisquer limitações ou restrições]
+"""
+            with open(destination_path, 'w', encoding='utf-8') as dst:
+                dst.write(basic_template)
+
+        return destination_path
+    except Exception as e:
+        print(f"Erro ao criar template de diretiva: {str(e)}")
+        return None
+
+def load_project_directive():
+    """
+    Carrega e retorna o conteúdo da Diretiva do Projeto.
+    Se não encontrar, sugere a criação.
+
+    Returns:
+        Dict com o conteúdo da diretiva ou None se não encontrada.
+    """
+    directive_path = find_project_directive()
+
+    if not directive_path:
+        return None
+
+    try:
+        with open(directive_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        return {
+            'path': directive_path,
+            'content': content,
+            'exists': True
+        }
+    except Exception as e:
+        print(f"Erro ao ler diretiva do projeto: {str(e)}")
+        return {
+            'exists': False,
+            'error': str(e)
+        }

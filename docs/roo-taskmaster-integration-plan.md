@@ -212,17 +212,106 @@ flowchart TD
 
 ## 7. Glossário e Conceitos
 
-- **ADR**: Architecture Decision Record
-- **PRD**: Product Requirements Document
-- **WBS**: Work Breakdown Structure
-- **Backlog**: Lista priorizada de tarefas
-- **Milestone**: Marco importante do projeto
-- **Sprint**: Ciclo de trabalho iterativo
-- **MVP**: Minimum Viable Product
-- **Retrospectiva**: Análise pós-projeto
-- **LLM**: Large Language Model
-- **CLI**: Command Line Interface
-- **API**: Application Programming Interface
+| Category                                                 | Role/Term                                       | Description                                                     |
+| -------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------- |
+| Documentação e Processo                                  | ADR                                             | Architecture Decision Record                                    |
+| Documentação e Processo                                  | PRD                                             | Product Requirements Document                                   |
+| Documentação e Processo                                  | WBS                                             | Work Breakdown Structure                                        |
+| Documentação e Processo                                  | Backlog                                         | Lista priorizada de tarefas                                     |
+| Documentação e Processo                                  | Milestone                                       | Marco importante do projeto                                     |
+| Documentação e Processo                                  | Sprint                                          | Ciclo de trabalho iterativo                                     |
+| Documentação e Processo                                  | MVP                                             | Minimum Viable Product                                          |
+| Documentação e Processo                                  | Retrospectiva                                   | Análise pós-projeto                                             |
+| Tecnologia                                               | LLM                                             | Large Language Model                                            |
+| Tecnologia                                               | CLI                                             | Command Line Interface                                          |
+| Tecnologia                                               | API                                             | Application Programming Interface                               |
+| Infraestrutura Tradicional                               | Administrador de Redes                          | Gerencia redes locais, WAN, VPNs e conectividade geral          |
+| Infraestrutura Tradicional                               | Administrador de Sistemas                       | Administra servidores físicos e virtuais, sistemas operacionais |
+| Infraestrutura Tradicional                               | Analista de Suporte Técnico                     | Resolve incidentes, suporte a usuários e manutenção básica      |
+| Infraestrutura Tradicional                               | Administrador de Storage                        | Gerencia armazenamento corporativo, SAN, NAS                    |
+| Infraestrutura Tradicional                               | Especialista em Segurança da Informação         | Define políticas, monitora e protege ativos de TI               |
+| Infraestrutura em Nuvem                                  | Cloud Architect                                 | Define arquitetura de soluções em nuvem                         |
+| Infraestrutura em Nuvem                                  | Cloud Engineer                                  | Implementa e mantém ambientes em nuvem                          |
+| Infraestrutura em Nuvem                                  | Especialista em Migração para Nuvem             | Planeja e executa migração de sistemas para a nuvem             |
+| Infraestrutura em Nuvem                                  | FinOps Specialist                               | Otimiza custos e uso de recursos em nuvem                       |
+| Infraestrutura em Nuvem                                  | Cloud Security Engineer                         | Garante segurança em ambientes cloud                            |
+| DevOps e Automação                                       | DevOps Engineer                                 | Automatiza pipelines CI/CD, integra desenvolvimento e operações |
+| DevOps e Automação                                       | Site Reliability Engineer (SRE)                 | Garante confiabilidade, escalabilidade e automação de sistemas  |
+| DevOps e Automação                                       | Release Manager                                 | Coordena releases, versionamento e deploys                      |
+| DevOps e Automação                                       | Platform Engineer                               | Desenvolve e mantém plataformas internas para desenvolvedores   |
+| DevOps e Automação                                       | Infrastructure as Code Specialist               | Automatiza infraestrutura via código (Terraform, Ansible, etc.) |
+| Banco de Dados e Dados                                   | Administrador de Banco de Dados (DBA)           | Gerencia bancos relacionais, performance, backup e segurança    |
+| Banco de Dados e Dados                                   | Database Engineer                               | Desenvolve e otimiza soluções de banco de dados                 |
+| Banco de Dados e Dados                                   | Especialista em Banco de Dados NoSQL            | Administra bancos NoSQL (MongoDB, Cassandra, etc.)              |
+| Banco de Dados e Dados                                   | Data Warehouse Specialist                       | Modela e mantém data warehouses para BI                         |
+| Banco de Dados e Dados                                   | DataOps Engineer                                | Automatiza pipelines de dados, integração e entrega contínua    |
+| Gestão Geral                                             | Escopo                                          | Definição do que será entregue no projeto                       |
+| Gestão Geral                                             | Cronograma                                      | Planejamento temporal das atividades                            |
+| Gestão Geral                                             | Orçamento                                       | Planejamento e controle dos custos do projeto                   |
+| Gestão Geral                                             | Stakeholders                                    | Partes interessadas no projeto                                  |
+| Gestão Geral                                             | ROI                                             | Retorno sobre o investimento                                    |
+| Gestão Geral                                             | OKRs                                            | Objetivos e resultados-chave para medir sucesso                 |
+| Gestão Geral                                             | PMBOK                                           | Guia de boas práticas em gestão de projetos                     |
+| Metodologias Ágeis                                       | Scrum                                           | Framework ágil baseado em sprints e papéis definidos            |
+| Metodologias Ágeis                                       | Kanban                                          | Método ágil focado em fluxo contínuo e visualização do trabalho |
+| Metodologias Ágeis                                       | Sprint                                          | Iteração de tempo fixo para entrega de incrementos              |
+| Metodologias Ágeis                                       | Backlog                                         | Lista priorizada de funcionalidades e tarefas                   |
+| Metodologias Ágeis                                       | Daily                                           | Reunião diária para alinhamento da equipe                       |
+| Metodologias Ágeis                                       | Retrospectiva                                   | Análise pós-sprint para melhorias contínuas                     |
+| Gestão de Riscos                                         | Avaliação                                       | Identificação e análise de riscos                               |
+| Gestão de Riscos                                         | Mitigação                                       | Ações para reduzir a probabilidade ou impacto dos riscos        |
+| Gestão de Riscos                                         | Contingência                                    | Planos alternativos caso o risco se concretize                  |
+| Qualidade e Testes                                       | QA                                              | Garantia da qualidade do produto                                |
+| Qualidade e Testes                                       | Testes (Unitário, Integração, Aceitação)        | Verificações em diferentes níveis do sistema                    |
+| Qualidade e Testes                                       | CI/CD                                           | Integração e entrega contínuas automatizadas                    |
+| Desenvolvimento Técnico                                  | Arquitetura                                     | Estrutura organizacional do sistema                             |
+| Desenvolvimento Técnico                                  | Microservices                                   | Arquitetura baseada em serviços independentes                   |
+| Desenvolvimento Técnico                                  | API                                             | Interface para comunicação entre sistemas                       |
+| Desenvolvimento Técnico                                  | Refatoração                                     | Melhoria do código sem alterar seu comportamento                |
+| Desenvolvimento Técnico                                  | Dívida Técnica                                  | Compromissos técnicos que precisam ser resolvidos futuramente   |
+| Infraestrutura e Operações                               | Cloud                                           | Computação em nuvem                                             |
+| Infraestrutura e Operações                               | DevOps                                          | Integração entre desenvolvimento e operações                    |
+| Infraestrutura e Operações                               | IaC                                             | Infrastructure as Code, automação da infraestrutura             |
+| Infraestrutura e Operações                               | Docker                                          | Plataforma para criação de containers                           |
+| Infraestrutura e Operações                               | Kubernetes                                      | Orquestrador de containers                                      |
+| Monitoramento e Indicadores                              | KPIs                                            | Indicadores-chave de desempenho                                 |
+| Monitoramento e Indicadores                              | Dashboard                                       | Painel visual para monitoramento de métricas                    |
+| Monitoramento e Indicadores                              | SLA                                             | Acordo de nível de serviço                                      |
+| Monitoramento e Indicadores                              | Observabilidade                                 | Capacidade de entender o estado interno do sistema              |
+| Produto e UX                                             | MVP                                             | Produto mínimo viável para validação rápida                     |
+| Produto e UX                                             | User Story                                      | Descrição de uma funcionalidade sob a ótica do usuário          |
+| Produto e UX                                             | Wireframe                                       | Esboço visual da interface do usuário                           |
+| Produto e UX                                             | Prototipagem                                    | Criação de protótipos para validação de ideias                  |
+| Comunicação e Colaboração                                | Transparência                                   | Clareza e abertura nas informações e processos                  |
+| Comunicação e Colaboração                                | Feedback Loop                                   | Ciclo contínuo de retorno e melhoria                            |
+| Comunicação e Colaboração                                | Ferramentas (Slack, Jira, Trello, Notion)       | Plataformas para comunicação e gestão colaborativa              |
+| Compliance e Segurança                                   | LGPD/GDPR                                       | Regulamentações de proteção de dados                            |
+| Compliance e Segurança                                   | Cybersecurity                                   | Proteção contra ameaças e ataques digitais                      |
+| Compliance e Segurança                                   | Compliance                                      | Conformidade com normas, leis e políticas                       |
+| Projeto de Software - Gestão e Liderança                 | Product Manager                                 | Responsável pela visão do produto, priorização e roadmap        |
+| Projeto de Software - Gestão e Liderança                 | Project Manager                                 | Gerencia cronograma, orçamento e execução do projeto            |
+| Projeto de Software - Gestão e Liderança                 | Engineering Manager                             | Lidera equipes técnicas, desenvolvimento e performance          |
+| Projeto de Software - Gestão e Liderança                 | Scrum Master                                    | Facilita processos ágeis e remoção de impedimentos              |
+| Projeto de Software - Gestão e Liderança                 | Delivery Manager                                | Garante entregas contínuas e alinhadas com o negócio            |
+| Projeto de Software - Gestão e Liderança                 | Program Manager                                 | Coordena múltiplos projetos e iniciativas estratégicas          |
+| Projeto de Software - Desenvolvimento Técnico            | Tech Lead                                       | Lidera decisões técnicas e arquitetura                          |
+| Projeto de Software - Desenvolvimento Técnico            | Software Architect                              | Define arquitetura de sistemas complexos                        |
+| Projeto de Software - Desenvolvimento Técnico            | Desenvolvedores (Backend, Frontend, Full Stack) | Implementam funcionalidades e integrações                       |
+| Projeto de Software - Desenvolvimento Técnico            | DevOps Engineer                                 | Automatiza infraestrutura e integra operações                   |
+| Projeto de Software - Desenvolvimento Técnico            | QA Engineer                                     | Planeja e executa testes para garantir qualidade                |
+| Projeto de Software - Desenvolvimento Técnico            | Security Engineer                               | Implementa e revisa segurança em aplicações                     |
+| Projeto de Software - Design e UX/UI                     | UX Designer                                     | Foca na experiência do usuário                                  |
+| Projeto de Software - Design e UX/UI                     | UI Designer                                     | Cria interfaces visuais atraentes e funcionais                  |
+| Projeto de Software - Design e UX/UI                     | Product Designer                                | Atua na concepção do produto unindo UX e UI                     |
+| Projeto de Software - Dados e Análise                    | Data Engineer                                   | Constrói pipelines e infraestrutura de dados                    |
+| Projeto de Software - Dados e Análise                    | Data Analyst                                    | Analisa dados para gerar insights e apoiar decisões             |
+| Projeto de Software - Dados e Análise                    | Data Scientist                                  | Desenvolve modelos preditivos e análises avançadas              |
+| Projeto de Software - Negócios e Suporte                 | Business Analyst                                | Levanta requisitos e traduz necessidades do negócio             |
+| Projeto de Software - Negócios e Suporte                 | Stakeholder                                     | Parte interessada que influencia ou é impactada pelo projeto    |
+| Projeto de Software - Negócios e Suporte                 | Customer Success Manager                        | Garante sucesso e satisfação do cliente após entrega            |
+| Projeto de Software - Operações e Infraestrutura         | Site Reliability Engineer (SRE)                 | Garante confiabilidade, escalabilidade e automação de sistemas  |
+| Projeto de Software - Operações e Infraestrutura         | Infrastructure Engineer                         | Administra e otimiza infraestrutura técnica                     |
+| Projeto de Software - Documentação e Comunicação Técnica | Technical Writer                                | Produz e mantém documentação técnica clara e acessível          |
 
 ---
 

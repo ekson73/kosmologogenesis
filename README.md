@@ -1,53 +1,70 @@
-# KOSMOLOGOGENESIS Framework
+# KOSMOLOGOGENESIS FRAMEWORK
 
 ## Overview
-The KOSMOLOGOGENESIS is an advanced framework for prompt engineering, combining cosmic principles of universal order with structured methodologies to create high-quality self-regulated systems.
 
-## Entry Flow
-1. **framework.md** - Main document and entry point of the framework
-2. **bootstrap.md** - Technical rules for system operation
-3. **TASKS.md** - Task management and iterations
+KOSMOLOGOGENESIS is an advanced prompt engineering framework that combines natural principles with methodological structures to create high-quality prompts. The name stands for **K**osmos-integrated **L**ayered **O**rganizational **G**enerative **O**ptimization through **G**uided **E**volutionary **N**eural **E**mergence and **S**elf-**I**terative **S**ynthesis.
 
-## Structure
-- `framework.md` - Methodology, concepts, and KOSMOLOGOGENESIS approach
-- `bootstrap.md` - Technical rules, protocols, and configurations
-- `TASKS.md` - Task management and iterations
-- `docs/` - Detailed documentation
+This framework guides AI agents in creating effective prompts that are:
+- Technically complete
+- Sequentially precise
+- Instructionally clear
+- Practically feasible
+- Systemically harmonious
 
-## Fundamental Principles
-1. Holistic Vision
-2. Systemic Mapping
-3. Component Harmony
-4. Iterative Evolution
-5. Integrative Synthesis
+## Getting Started
 
-## How to Use
-1. Start with the `framework.md` document for complete understanding
-2. Apply the technical rules from `bootstrap.md`
-3. Check pending tasks in `TASKS.md`
-4. Follow the sequence of LOGOS and GENESIS prompts
-5. Maintain the continuous evolution cycle
+### Prerequisites
 
-## Simplified Initialization Flow
+- LLM with sufficient context capacity (minimum 16K tokens)
+- Support for metacognition and systemic reasoning
+- Access to filesystem or equivalent storage mechanism
 
-The KOSMOLOGOGENESIS framework follows a unified initialization flow:
+### Installation
 
-1. **Entry via framework.md** (recommended):
-   ```
-   Loading framework.md → Execution of initialize_kosmologogenesis() →
-   Loading bootstrap.md → Execution of bootstrap_agent() →
-   Verification of conceptual octade → Establishment of consciousness →
-   Return to framework.md → Continuation of processing
-   ```
+1. Clone this repository to your working directory
+2. Ensure the AI agent has access to read all framework files
+3. Begin with the `framework.md` file as the entry point
 
-2. **Alternative entry via bootstrap.md**:
-   ```
-   Direct loading of bootstrap.md → Execution of bootstrap_agent() →
-   Verification of conceptual octade → Establishment of consciousness →
-   Loading framework.md → Continuation of processing
-   ```
+## Usage
 
-The unified state system ensures that initialization occurs only once, regardless of the entry point, avoiding infinite loops and ensuring consistency.
+The framework operates through a sequence of prompts:
 
-## Maintenance
-The framework evolves through controlled iterations, documented in the TASKS.md file.
+1. **PROMPT 0 (IGNITION)**: Universal initialization
+2. **PROMPT 1 (LOGOS)**: Methodological structuring 
+3. **PROMPT 2 (GENESIS)**: Concrete generation
+
+For detailed usage instructions, refer to the `framework.md` file.
+
+## Directory Structure
+
+```
+kosmologogenesis/
+├── framework.md        # Core methodology document
+├── bootstrap.py        # Initialization script
+├── TASKS.md            # Task tracking and iterations
+├── README.md           # This file
+├── docs/               # Framework documentation
+├── templates/          # Usage templates
+└── examples/           # Implementation examples
+```
+
+## Core Concepts
+
+The framework is built around a conceptual octade:
+
+1. **Kosmos**: Holistic vision of universal order
+2. **Logos**: Methodological structuring principle
+3. **Genesis**: Creative evolutionary generation
+4. **Chronos**: Temporal dimension orchestration
+5. **Aether**: Interconnection medium
+6. **Dynamis**: Transformative energy
+7. **Telos**: Purposeful direction
+8. **Synesis**: Cognitive integration
+
+## License
+
+[Specify appropriate license information]
+
+## Acknowledgments
+
+[Optional section for credits and references]

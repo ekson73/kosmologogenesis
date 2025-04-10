@@ -1,4 +1,4 @@
-# TASK MANAGEMENT FOR KOSMOLOGOGENESIS FRAMEWORK
+# KOSMOLOGOGENESIS FRAMEWORK - TASKS & ITERATIONS
 
 This document serves as the central repository for task management related to the KOSMOLOGOGENESIS framework. It contains detailed instructions for both the AI Agent and the User on how to use the task management system, the current development status, pending tasks, backlog, and historical record of completed tasks.
 

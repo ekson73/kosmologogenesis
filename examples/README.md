@@ -1,15 +1,15 @@
-# Exemplos Práticos do Framework KOSMOLOGOGENESIS
+# Practical Examples of the KOSMOLOGOGENESIS Framework
 
-Este diretório contém exemplos práticos de aplicação do Framework KOSMOLOGOGENESIS em diferentes contextos. Cada arquivo apresenta um caso de uso específico, demonstrando como os princípios do framework podem ser aplicados em situações reais.
+This directory contains practical examples of applying the KOSMOLOGOGENESIS Framework in different contexts. Each file presents a specific use case, demonstrating how the framework's principles can be applied in real situations.
 
-## Exemplos Disponíveis
+## Available Examples
 
-1. [Engenharia de Prompts para Migração de Infraestrutura](./infrastructure-migration.md) - Aplicação do framework em um cenário de migração de sistema legado para arquitetura de microserviços em Kubernetes.
+1. [Prompt Engineering for Infrastructure Migration](./infrastructure-migration.md) - Application of the framework in a scenario of legacy system migration to microservices architecture in Kubernetes.
 
-2. [Documentação Técnica Evolutiva](./api-documentation.md) - Aplicação do framework para criar documentação de API em constante evolução.
+2. [Evolutionary Technical Documentation](./api-documentation.md) - Application of the framework to create constantly evolving API documentation.
 
-## Como Utilizar os Exemplos
+## How to Use the Examples
 
-Estes exemplos servem como referência para entender como aplicar os princípios do KOSMOLOGOGENESIS em projetos reais. Você pode adaptá-los às suas necessidades específicas, seguindo a estrutura de fases (Kosmos, Logos, Genesis) apresentada em cada exemplo.
+These examples serve as references to understand how to apply the KOSMOLOGOGENESIS principles in real projects. You can adapt them to your specific needs, following the phase structure (Kosmos, Logos, Genesis) presented in each example.
 
-Para mais detalhes sobre o framework completo, consulte o arquivo [framework.md](../framework.md) na raiz do projeto.
+For more details about the complete framework, consult the [framework.md](../framework.md) file in the project root.

@@ -1,109 +1,109 @@
-# Exemplo Prático: Engenharia de Prompts para SaaS Multi-Tenant para Lojas de Autopeças
+# Practical Example: Prompt Engineering for Multi-Tenant SaaS for Auto Parts Stores
 
-> **Nota:** Este é apenas um exemplo ilustrativo. O framework KOSMOLOGOGENESIS é genérico e pode ser aplicado a qualquer domínio, não se limitando a SaaS ou autopeças.
-
----
-
-## Contexto
-Desenvolvimento de uma plataforma SaaS multi-tenant para gerenciar operações de múltiplas lojas de autopeças, incluindo cadastro de produtos, estoque, vendas, clientes e integração com marketplaces.
+> **Note:** This is just an illustrative example. The KOSMOLOGOGENESIS framework is generic and can be applied to any domain, not limited to SaaS or auto parts.
 
 ---
 
-## Aplicação da Octade Conceitual
+## Context
+Development of a multi-tenant SaaS platform to manage operations of multiple auto parts stores, including product registration, inventory, sales, customers, and marketplace integration.
+
+---
+
+## Application of the Conceptual Octade
 
 ### Kosmos
-- Visão holística do ecossistema de autopeças
-- Integração entre lojas, fornecedores, clientes e marketplaces
-- Harmonia entre customização por loja e padronização da plataforma
+- Holistic vision of the auto parts ecosystem
+- Integration between stores, suppliers, customers, and marketplaces
+- Harmony between store customization and platform standardization
 
 ### Logos
-- Estruturação do prompt para cobrir:
-  - Multi-tenancy seguro e escalável
-  - Cadastro e gestão de produtos, estoque, vendas e clientes
-  - Integração com ERPs e marketplaces
-  - APIs RESTful documentadas
-  - Painéis administrativos e relatórios
-  - Controle de acesso por perfil
+- Structuring the prompt to cover:
+  - Secure and scalable multi-tenancy
+  - Registration and management of products, inventory, sales, and customers
+  - Integration with ERPs and marketplaces
+  - Documented RESTful APIs
+  - Administrative dashboards and reports
+  - Profile-based access control
 
 ### Genesis
-- Geração iterativa da arquitetura multi-tenant
-- Criação automática das APIs e banco de dados multi-tenant
-- Geração de documentação OpenAPI
-- Criação de fluxos de autenticação e autorização
-- Geração de testes automatizados
-- Refinamento com base em validações e feedback
+- Iterative generation of multi-tenant architecture
+- Automatic creation of APIs and multi-tenant database
+- Generation of OpenAPI documentation
+- Creation of authentication and authorization flows
+- Generation of automated tests
+- Refinement based on validations and feedback
 
 ### Chronos
-- Sequenciamento: arquitetura → APIs → integrações → UI → testes
-- Iterações rápidas com validação contínua
+- Sequencing: architecture → APIs → integrations → UI → tests
+- Rapid iterations with continuous validation
 
 ### Aether
-- Comunicação fluida entre módulos de cadastro, vendas, estoque e integrações
+- Fluid communication between registration, sales, inventory, and integration modules
 
 ### Dynamis
-- Ativação da IA para geração criativa da arquitetura e código
+- Activation of AI for creative generation of architecture and code
 
 ### Telos
-- Plataforma SaaS multi-tenant funcional, segura, escalável e integrada
+- Functional, secure, scalable, and integrated multi-tenant SaaS platform
 
 ### Synesis
-- Integração do conhecimento técnico com as necessidades específicas de cada loja
+- Integration of technical knowledge with the specific needs of each store
 
 ---
 
-## Exemplo de Prompt Inicial
+## Initial Prompt Example
 
 """
-Você é um assistente de IA especializado em desenvolvimento de plataformas SaaS multi-tenant.
+You are an AI assistant specialized in developing multi-tenant SaaS platforms.
 
-Requisitos:
-- Plataforma para múltiplas lojas de autopeças
-- Cada loja deve ter seu próprio ambiente isolado (multi-tenant)
-- Funcionalidades:
-  - Cadastro de produtos e categorias
-  - Controle de estoque
-  - Gestão de vendas e clientes
-  - Integração com marketplaces (ex: Mercado Livre)
-  - Painel administrativo com relatórios
-  - Controle de acesso por perfil
-- Tecnologias:
-  - Backend: Python (FastAPI) ou Node.js (Express)
-  - Banco de dados: PostgreSQL com suporte multi-tenant
+Requirements:
+- Platform for multiple auto parts stores
+- Each store should have its own isolated environment (multi-tenant)
+- Features:
+  - Product and category registration
+  - Inventory control
+  - Sales and customer management
+  - Marketplace integration (e.g., Mercado Livre)
+  - Administrative dashboard with reports
+  - Profile-based access control
+- Technologies:
+  - Backend: Python (FastAPI) or Node.js (Express)
+  - Database: PostgreSQL with multi-tenant support
   - Frontend: React
-  - Autenticação JWT
-  - Documentação OpenAPI
-  - Testes automatizados
+  - JWT Authentication
+  - OpenAPI documentation
+  - Automated tests
 
-Gere:
-1. Arquitetura multi-tenant segura e escalável
-2. Modelos de dados multi-tenant
-3. APIs RESTful para todas as funcionalidades
-4. Fluxos de autenticação e autorização
-5. Documentação OpenAPI
-6. Testes automatizados
-7. Comentários explicativos no código
+Generate:
+1. Secure and scalable multi-tenant architecture
+2. Multi-tenant data models
+3. RESTful APIs for all functionalities
+4. Authentication and authorization flows
+5. OpenAPI documentation
+6. Automated tests
+7. Explanatory comments in the code
 
-Siga boas práticas de segurança, escalabilidade e código limpo.
+Follow best practices for security, scalability, and clean code.
 """
 
 ---
 
-## Processo Iterativo
-1. **Geração inicial** da arquitetura, APIs e artefatos
-2. **Validação** da solução gerada (execução e testes)
-3. **Refinamento** do prompt para corrigir ou melhorar
-4. **Repetição** até atingir os objetivos definidos
+## Iterative Process
+1. **Initial generation** of architecture, APIs, and artifacts
+2. **Validation** of the generated solution (execution and tests)
+3. **Refinement** of the prompt to correct or improve
+4. **Repetition** until defined objectives are achieved
 
 ---
 
-## Resultados Esperados
-- Plataforma SaaS multi-tenant funcional e segura
-- APIs documentadas e testadas
-- Facilidade para customização por loja
-- Integração fluida com marketplaces
-- Facilidade para manutenção e evolução
+## Expected Results
+- Functional and secure multi-tenant SaaS platform
+- Documented and tested APIs
+- Ease of customization by store
+- Fluid integration with marketplaces
+- Ease of maintenance and evolution
 
 ---
 
-## Observações
-Este exemplo demonstra como o framework KOSMOLOGOGENESIS pode ser aplicado para criar prompts que gerem soluções completas e integradas para plataformas SaaS multi-tenant no setor de autopeças.
+## Observations
+This example demonstrates how the KOSMOLOGOGENESIS framework can be applied to create prompts that generate complete and integrated solutions for multi-tenant SaaS platforms in the auto parts sector.

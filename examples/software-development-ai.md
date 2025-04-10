@@ -1,96 +1,96 @@
-# Exemplo Prático: Engenharia de Prompts para Desenvolvimento de Software com IA
+# Practical Example: Prompt Engineering for Software Development with AI
 
-> **Nota:** Este é apenas um exemplo ilustrativo. O framework KOSMOLOGOGENESIS é genérico e pode ser aplicado a qualquer domínio, não se limitando a software ou IA.
-
----
-
-## Contexto
-Desenvolvimento de um assistente de IA para geração automática de código, documentação e testes para uma API RESTful.
+> **Note:** This is just an illustrative example. The KOSMOLOGOGENESIS framework is generic and can be applied to any domain, not limited to software or AI.
 
 ---
 
-## Aplicação da Octade Conceitual
+## Context
+Development of an AI assistant for automatic generation of code, documentation, and tests for a RESTful API.
+
+---
+
+## Application of the Conceptual Octade
 
 ### Kosmos
-- Visão holística do ciclo de vida do software
-- Integração entre requisitos, código, documentação e testes
-- Harmonia entre automação e intervenção humana
+- Holistic vision of the software lifecycle
+- Integration between requirements, code, documentation, and tests
+- Harmony between automation and human intervention
 
 ### Logos
-- Estruturação do prompt para cobrir:
-  - Requisitos funcionais e não funcionais
-  - Padrões de projeto
-  - Convenções de código
-  - Documentação inline e externa
-  - Casos de teste automatizados
+- Structuring the prompt to cover:
+  - Functional and non-functional requirements
+  - Design patterns
+  - Code conventions
+  - Inline and external documentation
+  - Automated test cases
 
 ### Genesis
-- Geração iterativa do código da API
-- Criação automática da documentação OpenAPI
-- Geração de testes unitários e de integração
-- Refinamento com base em validações e feedback
+- Iterative generation of API code
+- Automatic creation of OpenAPI documentation
+- Generation of unit and integration tests
+- Refinement based on validations and feedback
 
 ### Chronos
-- Sequenciamento: requisitos → código → documentação → testes
-- Iterações rápidas com validação contínua
+- Sequencing: requirements → code → documentation → tests
+- Rapid iterations with continuous validation
 
 ### Aether
-- Comunicação fluida entre módulos de geração, validação e documentação
+- Fluid communication between generation, validation, and documentation modules
 
 ### Dynamis
-- Ativação da IA para geração criativa e otimização do código
+- Activation of AI for creative generation and code optimization
 
 ### Telos
-- API funcional, documentada, testada e alinhada aos requisitos
+- Functional, documented, tested API aligned with requirements
 
 ### Synesis
-- Integração do conhecimento técnico com as necessidades do usuário final
+- Integration of technical knowledge with end-user needs
 
 ---
 
-## Exemplo de Prompt Inicial
+## Initial Prompt Example
 
 """
-Você é um assistente de IA especializado em desenvolvimento de APIs RESTful.
+You are an AI assistant specialized in RESTful API development.
 
-Dado o seguinte requisito:
+Given the following requirement:
 
-- Criar uma API para gerenciar tarefas (CRUD)
-- Tecnologias: Python, FastAPI, SQLAlchemy
-- Requisitos:
-  - Autenticação JWT
-  - Validação de dados
-  - Documentação OpenAPI
-  - Testes automatizados com pytest
+- Create an API to manage tasks (CRUD)
+- Technologies: Python, FastAPI, SQLAlchemy
+- Requirements:
+  - JWT Authentication
+  - Data validation
+  - OpenAPI documentation
+  - Automated tests with pytest
 
-Gere:
-1. Código da API com endpoints CRUD
-2. Modelos de dados com SQLAlchemy
-3. Configuração de autenticação JWT
-4. Documentação OpenAPI
-5. Testes unitários e de integração
-6. Comentários explicativos no código
+Generate:
+1. API code with CRUD endpoints
+2. Data models with SQLAlchemy
+3. JWT authentication configuration
+4. OpenAPI documentation
+5. Unit and integration tests
+6. Explanatory comments in the code
 
-Siga boas práticas de código limpo e segurança.
+Follow clean code and security best practices.
 """
 
 ---
 
-## Processo Iterativo
-1. **Geração inicial** do código e artefatos
-2. **Validação** da API gerada (execução e testes)
-3. **Refinamento** do prompt para corrigir ou melhorar
-4. **Repetição** até atingir os objetivos definidos
+## Iterative Process
+1. **Initial generation** of code and artifacts
+2. **Validation** of the generated API (execution and tests)
+3. **Refinement** of the prompt to correct or improve
+4. **Repetition** until defined objectives are achieved
 
 ---
 
-## Resultados Esperados
-- Código funcional e seguro
-- Documentação clara e completa
-- Testes cobrindo os principais fluxos
-- Facilidade para manutenção e evolução
+## Expected Results
+- Functional and secure code
+- Clear and complete documentation
+- Tests covering the main flows
+- Ease of maintenance and evolution
 
 ---
 
-## Observações
-Este exemplo demonstra como o framework KOSMOLOGOGENESIS pode ser aplicado para criar prompts que gerem soluções completas e integradas no contexto de desenvolvimento de software com IA.
+## Observations
+This example demonstrates how the KOSMOLOGOGENESIS framework can be applied to create prompts that generate complete and integrated solutions in the context of software development with AI.

@@ -1,67 +1,67 @@
-# DIRETIVA DO PROJETO
+# PROJECT DIRECTIVE
 
-## Contexto
-[Descreva o contexto geral do projeto, incluindo a situação atual, desafios existentes, e o ambiente técnico onde o projeto será implementado.]
+## Context
+[Describe the general context of the project, including the current situation, existing challenges, and the technical environment where the project will be implemented.]
 
-## Objetivos
-- [Objetivo principal do projeto]
-- [Resultados concretos esperados]
-- [Métricas de sucesso]
-- [Cronograma geral, se aplicável]
+## Objectives
+- [Main project objective]
+- [Expected concrete results]
+- [Success metrics]
+- [General timeline, if applicable]
 
-## Requisitos
-- [Requisitos funcionais]
-- [Requisitos não-funcionais: segurança, desempenho, escalabilidade]
-- [Restrições técnicas]
-- [Padrões e convenções a serem seguidos]
+## Requirements
+- [Functional requirements]
+- [Non-functional requirements: security, performance, scalability]
+- [Technical constraints]
+- [Standards and conventions to be followed]
 
-## Restrições
-- [Limitações orçamentárias]
-- [Limitações de tempo]
-- [Limitações técnicas]
-- [Considerações regulatórias ou de conformidade]
+## Constraints
+- [Budget limitations]
+- [Time limitations]
+- [Technical limitations]
+- [Regulatory or compliance considerations]
 
 ## Stakeholders
-- [Principais interessados e suas expectativas]
-- [Equipes envolvidas]
-- [Responsabilidades]
+- [Main stakeholders and their expectations]
+- [Teams involved]
+- [Responsibilities]
 
-## Prioridades
-- [Alta prioridade: funcionalidades essenciais]
-- [Média prioridade: funcionalidades importantes]
-- [Baixa prioridade: funcionalidades desejáveis]
+## Priorities
+- [High priority: essential functionalities]
+- [Medium priority: important functionalities]
+- [Low priority: desirable functionalities]
 
-## Riscos Identificados
-- [Riscos principais]
-- [Estratégias de mitigação]
-- [Planos de contingência]
+## Identified Risks
+- [Main risks]
+- [Mitigation strategies]
+- [Contingency plans]
 
-## Entregáveis
-- [Lista de entregáveis]
-- [Cronograma de entrega]
-- [Responsáveis por cada entrega]
+## Deliverables
+- [List of deliverables]
+- [Delivery schedule]
+- [Responsible for each delivery]
 
-## Resultados Esperados
-- [Resultados esperados após a conclusão do projeto]
-- [Métricas de sucesso]
-- [Impacto esperado]
+## Expected Results
+- [Expected results after project completion]
+- [Success metrics]
+- [Expected impact]
 
-## Critérios de Sucesso
-- [Critérios de sucesso para avaliar o sucesso do projeto]
-- [Métricas de avaliação]
+## Success Criteria
+- [Success criteria to evaluate the project success]
+- [Evaluation metrics]
 
-## Checklist de Validação
-- [Lista de tarefas a serem concluídas]
-- [Responsáveis por cada tarefa]
-- [Cronograma de entrega]
+## Validation Checklist
+- [List of tasks to be completed]
+- [Responsible for each task]
+- [Delivery schedule]
 
-## Perguntas Orientadoras
-- [Perguntas que orientarão o projeto]
-- [Respostas esperadas]
+## Guiding Questions
+- [Questions that will guide the project]
+- [Expected answers]
 
-## Reflexões e Iterações
-- [Reflexões sobre a implementação]
-- [Iterações futuras]
+## Reflections and Iterations
+- [Reflections on implementation]
+- [Future iterations]
 
 ---
-*Nota: Esta diretiva deve ser versionada junto com o código do projeto. Atualize-a à medida que novos insights ou requisitos surgirem.*
+*Note: This directive should be versioned with the project code. Update it as new insights or requirements emerge.*

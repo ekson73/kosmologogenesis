@@ -1,32 +1,32 @@
-# Exemplo 1: Engenharia de Prompts para Migração de Infraestrutura
+# Example 1: Prompt Engineering for Infrastructure Migration
 
-**Contexto:** Migração de um sistema legado para uma arquitetura baseada em microserviços em Kubernetes.
+**Context:** Migration of a legacy system to a microservices architecture in Kubernetes.
 
-**Aplicação do Framework:**
+**Framework Application:**
 
-1. **Fase Kosmos:**
-   - Mapeamento holístico de todos os componentes do sistema e suas interdependências
-   - Identificação de padrões de comunicação e fluxos de dados entre serviços
-   - Visualização do ecossistema completo incluindo sistemas externos
+1. **Kosmos Phase:**
+   - Holistic mapping of all system components and their interdependencies
+   - Identification of communication patterns and data flows between services
+   - Visualization of the complete ecosystem including external systems
 
-2. **Fase Logos:**
+2. **Logos Phase:**
    ```markdown
-   # Prompt para Migração de Sistema Legado para Kubernetes
+   # Prompt for Legacy System Migration to Kubernetes
    
-   ## Contexto Sistêmico
-   - Sistema atual: Monolítico Java EE em servidor físico
-   - Destino: Arquitetura de microserviços em Kubernetes EKS
-   - Dependências críticas: 3 sistemas externos, 2 bancos de dados
+   ## Systemic Context
+   - Current system: Monolithic Java EE on physical server
+   - Target: Microservices architecture in Kubernetes EKS
+   - Critical dependencies: 3 external systems, 2 databases
    
-   ## Objetivos
-   1. Decompor aplicação monolítica em microserviços
-   2. Estabelecer pipeline CI/CD
-   3. Implementar monitoramento e observabilidade
-   4. Garantir zero downtime durante migração
+   ## Objectives
+   1. Decompose monolithic application into microservices
+   2. Establish CI/CD pipeline
+   3. Implement monitoring and observability
+   4. Ensure zero downtime during migration
    ```
 
-3. **Fase Genesis:**
-   - Geração de documentos detalhados para cada microserviço
-   - Criação de manifestos Kubernetes e configurações de rede
-   - Desenvolvimento de scripts de migração de dados
-   - Implementação de testes de integração automatizados
+3. **Genesis Phase:**
+   - Generation of detailed documents for each microservice
+   - Creation of Kubernetes manifests and network configurations
+   - Development of data migration scripts
+   - Implementation of automated integration tests

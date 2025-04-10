@@ -1,33 +1,33 @@
-# Exemplo 2: Documentação Técnica Evolutiva
+# Example 2: Evolutionary Technical Documentation
 
-**Contexto:** Criação de documentação para uma API que está em constante evolução.
+**Context:** Creation of documentation for an API that is constantly evolving.
 
-**Aplicação do Framework:**
+**Framework Application:**
 
-1. **Fase Kosmos:**
-   - Compreensão do propósito global da API no ecossistema
-   - Identificação dos diferentes perfis de usuários e suas necessidades
-   - Mapeamento dos ciclos de vida da API e padrões de evolução
+1. **Kosmos Phase:**
+   - Understanding the global purpose of the API in the ecosystem
+   - Identification of different user profiles and their needs
+   - Mapping of API life cycles and evolution patterns
 
-2. **Fase Logos:**
+2. **Logos Phase:**
    ```markdown
-   # Framework de Documentação Evolutiva para API
+   # Evolutionary Documentation Framework for API
    
-   ## Princípios
-   - Documentação como código (versionada junto com a API)
-   - Exemplos executáveis e testáveis automaticamente
-   - Múltiplas camadas de detalhamento para diferentes usuários
-   - Mecanismos de feedback incorporados
+   ## Principles
+   - Documentation as code (versioned with the API)
+   - Executable and automatically testable examples
+   - Multiple layers of detail for different users
+   - Built-in feedback mechanisms
    
-   ## Estrutura
-   1. Visão geral conceitual (para todos os usuários)
-   2. Guias de início rápido (para novos desenvolvedores)
-   3. Referência completa de endpoints (para implementadores)
-   4. Arquitetura e design (para contribuidores)
+   ## Structure
+   1. Conceptual overview (for all users)
+   2. Quick start guides (for new developers)
+   3. Complete endpoint reference (for implementers)
+   4. Architecture and design (for contributors)
    ```
 
-3. **Fase Genesis:**
-   - Implementação de sistema de documentação automatizada a partir do código
-   - Criação de playground interativo para experimentação com a API
-   - Desenvolvimento de mecanismos de feedback e análise de uso
-   - Integração com sistema de controle de versão e CI/CD
+3. **Genesis Phase:**
+   - Implementation of automated documentation system from code
+   - Creation of interactive playground for experimentation with the API
+   - Development of feedback mechanisms and usage analysis
+   - Integration with version control system and CI/CD

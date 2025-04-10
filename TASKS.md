@@ -80,15 +80,24 @@ This document serves as the central repository for task management related to th
 
 ## Pending Tasks:
 
-[x] Validate that Completed Tasks were executed correctly following the KOSMOLOGOGENESIS methodology
-[x] Analyze, compare and identify the best task management method: Roocode Boomerang Tasks vs claude-task-master
+[x] Validate that Completed Tasks were executed correctly following the framework methodology
+[x] Analyze, compare and identify the best task management method: Roo Code Boomerang Tasks vs claude-task-master
+[ ] Migrate the actual task manager methodology and files to Roo Code Boomerang Tasks and claude-task-master
+[ ] Create a new version of the framework based on the new task management system
+[ ] Document the new version in the versioning.md file
+[ ] Create a new version of the framework in the adaptation-guidelines.md file
+[ ] Create a new version of the framework in the validation-matrix.md file
+[ ] Create a new version of the framework in the sporos-checklist.md file
+[ ] Create a new version of the framework in the analysis.md file
+[ ] Create a new version of the framework in the examples.md file
 [ ] Simulate the framework in a real project (e.g., IaC migration, API, prompts) - Compare with previous executions
 [ ] Collect metrics using the validation matrix
 [ ] Document lessons learned and necessary adjustments
 [ ] Update guides, templates and matrix according to learnings
 [ ] Plan backlog for the next iteration based on results
+[ ] Group and merge Future Tasks into the same with same meaning
 
-## Future Task Backlog
+## Future Tasks
 
 [ ] Explore automation of the iteration cycle
 [ ] Create integrations with specific tools (e.g., ArgoCD, Terraform)
@@ -96,7 +105,28 @@ This document serves as the central repository for task management related to th
 [ ] Expand practical examples to new domains
 [ ] Explore and validate the use of CrewAI and LangChain in the KOSMOLOGOGENESIS process
 [ ] Explore and validate the creation of an index.html/js website or a Python app for the framework
-
+[ ] Review and update the versioning.md file to reflect recent changes
+[ ] Ensure all new versions are documented in the adaptation-guidelines.md file
+[ ] Review and update the validation-matrix.md file to reflect recent changes
+[ ] Review and update the sporos-checklist.md file to reflect recent changes
+[ ] Review and update the analysis.md file to reflect recent changes
+[ ] Review and update the examples.md file to reflect recent changes
+[ ] Review and update the templates.md file to reflect recent changes
+[ ] Review and update the lessons-learned.md file to reflect recent changes
+[ ] Review and update the guides.md file to reflect recent changes
+[ ] Review and update the reports.md file to reflect recent changes
+[ ] Review and update the plans.md file to reflect recent changes
+[ ] Review and update the checklists.md file to reflect recent changes
+[ ] Review and update the prompts.md file to reflect recent changes
+[ ] Review and update the analysis.md file to reflect recent changes
+[ ] Review and update the examples.md file to reflect recent changes
+[ ] Review and update the templates.md file to reflect recent changes
+[ ] Review and update the lessons-learned.md file to reflect recent changes
+[ ] Review and update the guides.md file to reflect recent changes
+[ ] Review and update the reports.md file to reflect recent changes
+[ ] Review and update the plans.md file to reflect recent changes
+[ ] Review and update the checklists.md file to reflect recent changes
+[ ] Review and update the prompts.md file to reflect recent changes
 ## Completed Tasks Record
 
 | Task | Iteration ID | Date | Observations |

@@ -1,170 +1,170 @@
-# Templates Reutilizáveis - Framework KOSMOLOGOGENESIS
+# Reusable Templates - KOSMOLOGOGENESIS Framework
 
-> **Finalidade:** Padronizar e elevar a qualidade da documentação, guiando humanos e agentes de IA a aplicar o framework de forma consciente, reflexiva e alinhada com seus princípios.
+> **Purpose:** Standardize and elevate documentation quality, guiding humans and AI agents to apply the framework in a conscious, reflective manner aligned with its principles.
 
-> **Benefícios:**
-> - Facilita documentação viva, evolutiva e iterativa
-> - Garante alinhamento com a octade conceitual
-> - Estimula pensamento crítico e validação contínua
-> - Promove rastreabilidade, aprendizado e melhoria
-
----
-
-## Template para Guia Prático
-
-### Título
-Guia Prático: [Tema ou Contexto]
-
-### Contexto e Objetivo
-Explique o cenário, desafios e metas.
-
-### Princípios Cósmicos Aplicados
-- **Kosmos:** Como a visão holística orienta este guia?
-- **Logos:** Quais estruturas e métodos serão usados?
-- **Genesis:** Como a geração iterativa será conduzida?
-- **Chronos:** Como o tempo e as iterações serão gerenciados?
-- **Aether:** Como garantir integração e comunicação?
-- **Dynamis:** Como ativar e impulsionar a execução?
-- **Telos:** Quais os propósitos e resultados esperados?
-- **Synesis:** Como integrar aprendizados e sínteses?
-
-### Passos Detalhados
-- Liste as etapas com base na octade, explicitando decisões e hipóteses.
-
-### Recomendações
-- Boas práticas, armadilhas, dicas.
-
-### Exemplos de Artefatos
-- YAMLs, diagramas, scripts, checklists.
-
-### Critérios de Sucesso
-- Como saber se o objetivo foi atingido?
-
-### Perguntas Orientadoras
-- O que pode estar faltando?
-- Quais riscos ou incertezas existem?
-- Como validar cada etapa?
-- Como melhorar continuamente?
-
-### Reflexões e Iterações
-- O que foi aprendido?
-- O que precisa ser ajustado?
-- Próximos passos.
-
-### Checklist de Validação
-- [ ] Alinhado com a octade conceitual
-- [ ] Documentação clara e completa
-- [ ] Resultados validados
-- [ ] Lições aprendidas registradas
+> **Benefits:**
+> - Facilitates living, evolutionary, and iterative documentation
+> - Ensures alignment with the conceptual octade
+> - Stimulates critical thinking and continuous validation
+> - Promotes traceability, learning, and improvement
 
 ---
 
-## Template para Plano de Implementação
+## Template for Practical Guide
 
-### Contexto e Objetivos
-...
+### Title
+Practical Guide: [Theme or Context]
 
-### Princípios Cósmicos Aplicados
-...
+### Context and Objective
+Explain the scenario, challenges, and goals.
 
-### Fases, Atividades e Cronograma
-...
+### Applied Cosmic Principles
+- **Kosmos:** How does the holistic vision guide this guide?
+- **Logos:** What structures and methods will be used?
+- **Genesis:** How will iterative generation be conducted?
+- **Chronos:** How will time and iterations be managed?
+- **Aether:** How to ensure integration and communication?
+- **Dynamis:** How to activate and drive execution?
+- **Telos:** What are the expected purposes and results?
+- **Synesis:** How to integrate learning and synthesis?
 
-### Riscos, Mitigações e Critérios de Sucesso
-...
+### Detailed Steps
+- List steps based on the octade, making decisions and hypotheses explicit.
 
-### Perguntas Orientadoras
-...
+### Recommendations
+- Best practices, pitfalls, tips.
 
-### Reflexões e Iterações
-...
+### Example Artifacts
+- YAMLs, diagrams, scripts, checklists.
 
-### Checklist de Validação
-...
+### Success Criteria
+- How to know if the objective has been achieved?
+
+### Guiding Questions
+- What might be missing?
+- What risks or uncertainties exist?
+- How to validate each step?
+- How to continuously improve?
+
+### Reflections and Iterations
+- What was learned?
+- What needs to be adjusted?
+- Next steps.
+
+### Validation Checklist
+- [ ] Aligned with the conceptual octade
+- [ ] Clear and complete documentation
+- [ ] Validated results
+- [ ] Lessons learned recorded
 
 ---
 
-## Template para Relatório de Iteração
+## Template for Implementation Plan
 
-### Iteração [Número]
-
-### Objetivos e Resultados
+### Context and Objectives
 ...
 
-### Princípios Cósmicos Aplicados
+### Applied Cosmic Principles
 ...
 
-### Tarefas Realizadas e Lições Aprendidas
+### Phases, Activities, and Timeline
 ...
 
-### Reflexões, Ajustes e Próximos Passos
+### Risks, Mitigations, and Success Criteria
 ...
 
-### Checklist de Validação
+### Guiding Questions
+...
+
+### Reflections and Iterations
+...
+
+### Validation Checklist
 ...
 
 ---
 
-## Template para Checklist
+## Template for Iteration Report
 
-- [ ] Item 1 — alinhado com princípios cósmicos?
-- [ ] Item 2 — validado e documentado?
-- [ ] Item 3 — aprendizado registrado?
+### Iteration [Number]
 
----
-
-## Template para Lições Aprendidas
-
-### Contexto
+### Objectives and Results
 ...
 
-### O que funcionou bem
+### Applied Cosmic Principles
 ...
 
-### O que pode ser melhorado
+### Completed Tasks and Lessons Learned
 ...
 
-### Ações recomendadas
+### Reflections, Adjustments, and Next Steps
 ...
 
-### Relação com princípios cósmicos
-...
-
-### Reflexões futuras
+### Validation Checklist
 ...
 
 ---
 
-## Template para Prompt Sporos
+## Template for Checklist
 
-### Contexto e Objetivo
+- [ ] Item 1 — aligned with cosmic principles?
+- [ ] Item 2 — validated and documented?
+- [ ] Item 3 — learning recorded?
+
+---
+
+## Template for Lessons Learned
+
+### Context
 ...
 
-### Princípios Cósmicos Aplicados
+### What Worked Well
 ...
 
-### Instruções para o Agente de IA
+### What Can Be Improved
 ...
 
-### Critérios de Sucesso
+### Recommended Actions
 ...
 
-### Exemplos
+### Relationship with Cosmic Principles
 ...
 
-### Perguntas Orientadoras
-...
-
-### Reflexões e Iterações
-...
-
-### Checklist de Validação
+### Future Reflections
 ...
 
 ---
 
-> **Dicas Gerais:**
-> - Sempre alinhe com a octade conceitual
-> - Valide, reflita e itere continuamente
-> - Documente decisões, hipóteses e aprendizados
-> - Use os templates como instrumentos de raciocínio, não só formulários
+## Template for Sporos Prompt
+
+### Context and Objective
+...
+
+### Applied Cosmic Principles
+...
+
+### Instructions for the AI Agent
+...
+
+### Success Criteria
+...
+
+### Examples
+...
+
+### Guiding Questions
+...
+
+### Reflections and Iterations
+...
+
+### Validation Checklist
+...
+
+---
+
+> **General Tips:**
+> - Always align with the conceptual octade
+> - Validate, reflect, and iterate continuously
+> - Document decisions, hypotheses, and learnings
+> - Use templates as reasoning instruments, not just forms

@@ -1,176 +1,322 @@
-# Plano Detalhado de Integração
+# Plano Avançado de Integração Roo Boomerang + Claude task-master-ai
 
-**Roo Boomerang + Claude task-master-ai**
+**Deep Dive**
 
 ---
 
 ## Sumário
 
-- [1. Visão Geral](#1-visão-geral)
-- [2. Frentes de Integração](#2-frentes-de-integração)
-  - [2.1. Adaptações no Roo Boomerang](#21-adaptações-no-roo-boomerang)
-  - [2.2. Adaptações no Claude task-master-ai](#22-adaptações-no-claude-task-master-ai)
-- [3. Fluxo de Utilização Integrado](#3-fluxo-de-utilização-integrado)
-- [4. Exemplo Prático: Criação Completa de um Game App](#4-exemplo-prático-criação-completa-de-um-game-app)
-- [5. Conceitos e Etapas de Engenharia e Gestão de Projetos](#5-conceitos-e-etapas-de-engenharia-e-gestão-de-projetos)
-- [6. Diagramas de Fluxo](#6-diagramas-de-fluxo)
+- [1. Visão Estratégica](#1-visão-estratégica)
+- [2. Arquitetura Técnica Detalhada](#2-arquitetura-técnica-detalhada)
+- [3. Frentes de Integração](#3-frentes-de-integração)
+- [4. Casos de Uso Detalhados](#4-casos-de-uso-detalhados)
+- [5. Pipeline Completo do Projeto (Game App)](#5-pipeline-completo-do-projeto-game-app)
+- [6. Fluxos Técnicos e Diagramas](#6-fluxos-técnicos-e-diagramas)
+- [7. Glossário e Conceitos](#7-glossário-e-conceitos)
+- [8. Riscos, Limitações e Mitigações](#8-riscos-limitações-e-mitigações)
+- [9. Recursos Exclusivos e Comuns](#9-recursos-exclusivos-e-comuns)
+- [10. Recursos do Task Master](#10-recursos-do-task-master)
 
 ---
 
-## 1. Visão Geral
+## 1. Visão Estratégica
 
-Este plano detalha como integrar **Roo Boomerang** (orquestrador multi-agente, transparente) com **Claude task-master-ai** (executor autônomo, criativo), para criar um sistema híbrido, flexível e auditável, que cobre desde a concepção da ideia até a entrega do produto.
-
----
-
-## 2. Frentes de Integração
-
-### 2.1. **Adaptações no Roo Boomerang**
-
-- **Padronizar leitura e escrita no `tasks/tasks.json` e `/tasks/*.md`**
-- **Invocar CLI `task-master`** para:
-  - Criar tarefas (`add-task`)
-  - Expandir tarefas (`expand`)
-  - Atualizar status (`set-status`)
-  - Analisar complexidade (`analyze-complexity`)
-- **Delegar tarefas criativas para Claude** via CLI/API
-- **Gerenciar ciclo completo**: decomposição, delegação, validação, integração
-- **Gerar e manter documentação** (ADR, PRD, planos, etc)
-- **Orquestrar fases do projeto**: concepção, planejamento, execução, validação
-- **Registrar decisões e progresso** em arquivos compartilhados
+- **Objetivo:** Criar um sistema híbrido que combine **controle explícito, auditável e multi-agente** (Roo Boomerang) com **autonomia criativa e rápida** (Claude task-master-ai).
+- **Benefícios:**
+  - Transparência + velocidade
+  - Flexibilidade para tarefas técnicas e criativas
+  - Padronização de tarefas e documentação
+  - Orquestração multi-fase, multi-agente, multi-modal
+- **Pilares:**
+  - **Padronização**: arquivos, formatos, nomenclaturas
+  - **Automação**: geração, expansão, execução, validação
+  - **Auditabilidade**: logs, confirmações, versionamento
+  - **Extensibilidade**: novos modos, agentes, integrações
 
 ---
 
-### 2.2. **Adaptações no Claude task-master-ai**
+## 2. Arquitetura Técnica Detalhada
 
-- **Usar estrutura padrão de arquivos** (`tasks.json`, `/tasks/*.md`)
-- **Aceitar comandos CLI do Roo** para criar/expandir tarefas
-- **Atualizar arquivos de tarefas conforme execução**
-- **Permitir chamadas via API ou CLI para integração transparente**
-- **(Opcional)** Exportar logs/resultados para Roo validar
-- **(Opcional)** Ajustar prompts para aceitar contexto do Roo
+### Componentes
 
----
+- **Roo Boomerang Core**
 
-## 3. Fluxo de Utilização Integrado
+  - Orquestrador multi-agente
+  - Gerencia modos especializados
+  - Invoca CLI `task-master`
+  - Controla ciclo de vida das tarefas
+  - Gera documentação (ADR, PRD, etc)
 
-```mermaid
-flowchart TD
-    A(User inicia ideia)
-    B(Roo Boomerang ajuda a definir escopo)
-    C(Claude task-master-ai sugere tipos de game)
-    D(User escolhe tipo de game)
-    E(Roo cria ADR e PRD)
-    F(Roo planeja roadmap e milestones)
-    G(Roo usa task-master para gerar tarefas)
-    H(Claude expande tarefas criativas)
-    I(Roo orquestra execução)
-    J(Claude executa tarefas autônomas)
-    K(Roo valida e integra resultados)
-    L(Entrega do produto)
-    A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L
-```
+- **Claude task-master-ai**
 
----
+  - CLI + API para criação, expansão, execução de tarefas
+  - **A API MCP cobre um subconjunto das funcionalidades da CLI, focando em operações CRUD rápidas, enquanto a CLI oferece comandos avançados como parsing, geração, análise e automações.**
+  - LLM-centric, autônomo
+  - Atualiza `tasks.json` e `/tasks/*.md`
+  - Gera subtarefas criativas
 
-## 4. Exemplo Prático: Criação Completa de um Game App
+- **Repositório de Tarefas**
 
-### **Etapas**
+  - `tasks/tasks.json`: banco central
+  - `/tasks/*.md`: tarefas detalhadas
+  - Versionado via Git
 
-1. **Ideação**
+- **Documentação**
 
-   - Usuário: "Quero criar um game, mas não sei qual"
-   - Roo Boomerang ativa Claude para sugerir gêneros (puzzle, RPG, shooter, etc)
-   - Usuário escolhe "Puzzle casual para mobile"
+  - `/docs/`: planos, ADRs, PRDs, retrospectivas
+  - `/docs/roo-vs-taskmaster-comparativo.md`
+  - `/docs/roo-taskmaster-integration-plan.md`
 
-2. **Definição**
-
-   - Roo cria **ADR** (decisão: puzzle, plataforma mobile, Unity)
-   - Roo cria **PRD** (requisitos: níveis, ranking, monetização, UX)
-
-3. **Planejamento**
-
-   - Roo define **roadmap** com **milestones** (MVP, Beta, Lançamento)
-   - Roo cria **fases**: Design, Prototipagem, Desenvolvimento, Testes, Deploy
-   - Roo usa task-master para gerar tarefas macro
-
-4. **Decomposição**
-
-   - Roo usa `task-master expand` para detalhar tarefas
-   - Claude gera subtarefas criativas (ex: ideias de puzzles, mecânicas)
-
-5. **Execução**
-
-   - Roo orquestra tarefas técnicas (setup Unity, backend, UI)
-   - Claude executa tarefas criativas (storyline, assets, diálogos)
-   - Roo acompanha progresso, atualiza status
-
-6. **Validação**
-
-   - Roo ativa modo Debug para testes
-   - Claude gera sugestões de melhorias
-   - Roo integra feedbacks
-
-7. **Entrega**
-   - Roo gera documentação final
-   - App publicado nas stores
+- **Configurações**
+  - `.roomodes`, `.roo/mcp.json`, `.windsurfrules`, `.env`
 
 ---
 
-## 5. Conceitos e Etapas de Engenharia e Gestão de Projetos
+## 3. Frentes de Integração
 
-- **Ideação**: brainstorming, análise de mercado, definição de público-alvo
-- **Análise de Viabilidade**: técnica, financeira, riscos
-- **ADR (Architecture Decision Record)**: decisões técnicas e arquiteturais
-- **PRD (Product Requirements Document)**: requisitos funcionais e não-funcionais
-- **Roadmap**: cronograma macro, entregas principais
-- **Milestones**: marcos importantes do projeto
-- **WBS (Work Breakdown Structure)**: decomposição hierárquica das entregas
-- **Backlog**: lista priorizada de tarefas
-- **Sprint Planning**: planejamento de ciclos de trabalho
-- **Task Breakdown**: detalhamento das tarefas
-- **Execução**: desenvolvimento, design, testes
-- **Validação**: QA, testes de usuário, revisões
-- **Entrega**: deploy, publicação, handover
-- **Documentação**: técnica, usuário, manutenção
-- **Retrospectiva**: análise pós-projeto, lições aprendidas
+### 3.1. Adaptações no Roo Boomerang
+
+- **Gerenciamento de tarefas via CLI `task-master`**
+- **Parsing e validação do `tasks.json`**
+- **Atualização incremental e segura**
+- **Delegação inteligente** com heurísticas (complexidade, criatividade, criticidade) para decidir entre Claude e modos Roo
+- **Orquestração multi-fase** (ideação, análise, planejamento, execução, validação, entrega)
+- **Controle de contexto detalhado** para Claude
+- **Logs e rastreabilidade detalhados**
+- **Preservar delegação interna para modos especializados Roo** (Code, Architect, Debug, Ask)
 
 ---
 
-## 6. Diagramas de Fluxo
+### 3.2. Adaptações no Claude task-master-ai
 
-### 6.1. Visão Macro do Processo
-
-```mermaid
-flowchart TD
-    A(Ideia)
-    B(Definição: ADR, PRD)
-    C(Planejamento: Roadmap, Milestones)
-    D(Decomposição: WBS, Backlog)
-    E(Execução: Dev, Design, Testes)
-    F(Validação)
-    G(Entrega)
-    H(Retrospectiva)
-    A --> B --> C --> D --> E --> F --> G --> H
-```
+- **Padronização de arquivos** para conformidade Roo
+- **Expor APIs e CLI** para integração direta
+- **Prompt engineering** para aceitar contexto detalhado
+- **Retornar resultados estruturados**
+- **Feedback loop** para status, logs, outputs
+- **Permitir re-execução ou ajustes automáticos**
 
 ---
 
-### 6.2. Integração Roo + Claude
+## 4. Casos de Uso Detalhados
+
+### Caso 1: Ideação e Definição
+
+- Usuário: "Quero criar um game, mas não sei qual"
+- Roo ativa Claude para brainstorming
+- Claude sugere gêneros, plataformas, tendências
+- Roo organiza respostas, pede decisão
+- Usuário escolhe "Puzzle casual para mobile"
+
+---
+
+### Caso 2: Geração de ADR e PRD
+
+- Roo cria ADR (plataforma, engine, monetização)
+- Roo cria PRD (funcionalidades, UX, KPIs)
+
+---
+
+### Caso 3: Planejamento e Tarefas
+
+- Roo define milestones
+- Roo usa task-master para criar tarefas macro
+- Claude expande tarefas criativas
+- Roo detalha tarefas técnicas
+
+---
+
+### Caso 4: Execução
+
+- Roo orquestra tarefas técnicas via CLI
+- Claude gera assets, diálogos, narrativa
+- Roo valida entregas, atualiza status
+- Claude sugere melhorias criativas
+
+---
+
+### Caso 5: Validação e Entrega
+
+- Roo ativa modo Debug para testes
+- Claude gera feedbacks criativos
+- Roo integra, documenta, entrega
+
+---
+
+### Caso 6: Integração CLI + API
+
+- Roo inicia projeto usando a CLI do task-master (`init`, `parse-prd`)
+- Claude expande tarefas criativas via API MCP
+- Roo consulta status e detalhes via API MCP (`listTasks`, `showTask`)
+- Roo atualiza status e dependências via API MCP
+- Claude sugere melhorias e expande subtarefas via API
+- Roo integra resultados, valida e orquestra próximos passos
+
+---
+
+## 5. Pipeline Completo do Projeto (Game App)
+
+| Fase                     | Atividades                                             | Responsável principal | Ferramentas/Modos                     |
+| ------------------------ | ------------------------------------------------------ | --------------------- | ------------------------------------- |
+| **Ideação**              | Brainstorm, análise mercado, definição público, gênero | Roo + Claude          | Claude (criatividade), Roo (controle) |
+| **Decisão Arquitetural** | ADR: plataforma, engine, tech stack                    | Roo                   | Roo Architect Mode                    |
+| **Requisitos**           | PRD: funcionalidades, UX, monetização, KPIs            | Roo                   | Roo Architect + Claude                |
+| **Planejamento**         | Roadmap, milestones, WBS, backlog                      | Roo                   | Roo Architect + Code                  |
+| **Geração de Tarefas**   | Criar tarefas macro, expandir em subtarefas            | Roo + Claude          | task-master CLI + Claude              |
+| **Design Criativo**      | Storyline, assets, mecânicas, narrativa                | Claude                | Claude task-master-ai                 |
+| **Desenvolvimento**      | Setup projeto, coding, integração, testes unitários    | Roo Code Mode         | Roo Code + task-master CLI            |
+| **Testes & QA**          | Testes funcionais, UX, performance, segurança          | Roo Debug Mode        | Roo Debug + Claude                    |
+| **Documentação**         | Técnicas, usuário, manutenção, retrospectiva           | Roo                   | Roo Architect + Ask                   |
+| **Entrega**              | Deploy, publicação, handover                           | Roo                   | Roo Code + Architect                  |
+| **Pós-Entrega**          | Feedback, melhorias, suporte                           | Roo + Claude          | Todos os modos                        |
+
+---
+
+## 6. Fluxos Técnicos e Diagramas
+
+### Arquitetura Geral
 
 ```mermaid
 flowchart TD
     U(Usuário)
     R(Roo Boomerang)
     C(Claude task-master-ai)
+    F(tasks.json + /tasks/*.md)
     U --> R
     R --> C
-    C --> R
-    R --> U
+    C --> F
+    R --> F
+    F --> R
+    F --> C
 ```
 
 ---
 
-## **Conclusão**
+### Pipeline Completo
 
-Este plano garante uma integração **transparente, auditável e eficiente** entre Roo Boomerang e Claude task-master-ai, cobrindo **todo o ciclo de vida do projeto**, desde a ideia até a entrega, com apoio a decisões, planejamento, execução e documentação.
+```mermaid
+flowchart TD
+    A(Ideia)
+    B(Definição: ADR, PRD)
+    C(Planejamento: Roadmap, Milestones)
+    D(Geração de Tarefas)
+    E(Expansão Criativa)
+    F(Execução Técnica)
+    G(Testes & QA)
+    H(Entrega)
+    I(Pós-Entrega)
+    A --> B --> C --> D --> E --> F --> G --> H --> I
+```
+
+---
+
+## 7. Glossário e Conceitos
+
+- **ADR**: Architecture Decision Record
+- **PRD**: Product Requirements Document
+- **WBS**: Work Breakdown Structure
+- **Backlog**: Lista priorizada de tarefas
+- **Milestone**: Marco importante do projeto
+- **Sprint**: Ciclo de trabalho iterativo
+- **MVP**: Minimum Viable Product
+- **Retrospectiva**: Análise pós-projeto
+- **LLM**: Large Language Model
+- **CLI**: Command Line Interface
+- **API**: Application Programming Interface
+
+---
+
+## 8. Riscos, Limitações e Mitigações
+
+| Risco/Limitação                         | Mitigação                                                 |
+| --------------------------------------- | --------------------------------------------------------- |
+| Divergência entre arquivos Roo e Claude | Padronizar tasks.json + Markdown, validações automáticas  |
+| Perda de contexto entre agentes         | Passar contexto detalhado, logs, histórico                |
+| Decisões criativas desalinhadas         | Revisões manuais, prompts claros, validações Roo          |
+| Complexidade excessiva                  | Modularização, fases bem definidas, automação incremental |
+| Dependência excessiva do LLM            | Controle explícito Roo, fallback para execução manual     |
+| Falhas na integração CLI/API            | Testes contínuos, logs detalhados, fallback manual        |
+| Escalabilidade do fluxo                 | Modularização, paralelização, múltiplos agentes Claude    |
+
+---
+
+## 9. Recursos Exclusivos e Comuns
+
+### Recursos exclusivos do **Boomerang**
+
+- Multi-modo explícito, delegação via `new_task`
+- Controle granular, confirmações iterativas
+- Rastreabilidade detalhada, logs, síntese final
+- Suporte a múltiplos MCP servers
+- Geração e gestão de documentação (ADR, PRD)
+- Orquestração multi-fase, multi-agente
+
+---
+
+### Recursos exclusivos do **task-master-ai**
+
+- CLI completa para parsear PRD, gerar, expandir, listar, atualizar, fixar dependências
+- Expansão automática baseada em complexidade
+- Geração automática de tarefas a partir de PRD
+- Suporte nativo a Perplexity AI
+- Workflow AI-driven integrado com Cursor
+- Atualização em lote com prompts
+- Gestão automática de dependências
+- Geração de arquivos individuais de tarefas
+- Pipeline linear e rápido
+
+---
+
+### Recursos comuns
+
+- Uso de Claude para geração e expansão
+- Suporte a Perplexity AI
+- Manipulação de tasks.json e arquivos Markdown
+- Suporte a dependências entre tarefas
+- Expansão de tarefas em subtarefas
+- Atualização de status das tarefas
+- Delegação para agentes especializados
+- Suporte a automação de workflows
+
+---
+
+## 10. Recursos do **Task Master**
+
+| **Descrição**                                   | **Comando CLI**         | **Parâmetros CLI**                                                                                                                              | **Recurso MCP**  | **Parâmetros MCP**                                                |
+| ----------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------- |
+| Inicializar novo projeto                        | `init`                  | `-y, --yes`, `-n, --name <name>`, `-d, --description <desc>`, `-v, --version <version>`, `-a, --author <author>`, `--skip-install`, `--dry-run` | _Não disponível_ | -                                                                 |
+| Executar script dev.js                          | `dev`                   | _(nenhum)_                                                                                                                                      | _Não disponível_ | -                                                                 |
+| Parsear PRD e gerar tasks.json                  | `parse-prd`             | `--input=<file.txt> [--tasks=10]`                                                                                                               | _Não disponível_ | -                                                                 |
+| Gerar arquivos individuais de tarefas           | `generate`              | `[--options]`                                                                                                                                   | _Não disponível_ | -                                                                 |
+| Listar todas as tarefas                         | `list`                  | `[--status=<status>] [--with-subtasks]`                                                                                                         | `listTasks`      | `status`, `withSubtasks`, `file`, `projectRoot`                   |
+| Mostrar detalhes de uma tarefa                  | `show`                  | `<id>`                                                                                                                                          | `showTask`       | `id`, `file`, `projectRoot`                                       |
+| Atualizar status de tarefas                     | `set-status`            | `--id=<id> --status=<status>`                                                                                                                   | `setTaskStatus`  | `id`, `status`, `file`, `projectRoot`                             |
+| Atualizar tarefas com novo contexto             | `update`                | `--from=<id> --prompt="<context>"`                                                                                                              | _Não disponível_ | -                                                                 |
+| Adicionar nova tarefa usando IA                 | `add-task`              | `--prompt="<text>" [--dependencies=1,2,3] [--priority=high]`                                                                                    | `addTask`        | `prompt`, `dependencies`, `priority`, `file`, `projectRoot`       |
+| Expandir tarefas em subtarefas                  | `expand`                | `--id=<id> [--num=5] [--research] [--prompt="<context>"] [--force]`                                                                             | `expandTask`     | `id`, `num`, `research`, `prompt`, `force`, `file`, `projectRoot` |
+| Expandir todas as tarefas pendentes             | `expand --all`          | `[--force] [--research]`                                                                                                                        | _Não disponível_ | -                                                                 |
+| Analisar complexidade das tarefas               | `analyze-complexity`    | `[--research] [--threshold=5]`                                                                                                                  | _Não disponível_ | -                                                                 |
+| Exibir relatório de complexidade                | `complexity-report`     | `[--file=<path>]`                                                                                                                               | _Não disponível_ | -                                                                 |
+| Limpar subtarefas                               | `clear-subtasks`        | `--id=<id>`                                                                                                                                     | _Não disponível_ | -                                                                 |
+| Adicionar subtask a uma tarefa                  | `add-subtask`           | `[--options]`                                                                                                                                   | _Não disponível_ | -                                                                 |
+| Remover subtask de uma tarefa                   | `remove-subtask`        | `[--options]`                                                                                                                                   | _Não disponível_ | -                                                                 |
+| Mostrar próxima tarefa a ser trabalhada         | `next`                  | _(nenhum)_                                                                                                                                      | `nextTask`       | `file`, `projectRoot`                                             |
+| Adicionar dependência entre tarefas             | `add-dependency`        | `--id=<id> --depends-on=<id>`                                                                                                                   | _Não disponível_ | -                                                                 |
+| Remover dependência entre tarefas               | `remove-dependency`     | `--id=<id> --depends-on=<id>`                                                                                                                   | _Não disponível_ | -                                                                 |
+| Validar dependências (sem corrigir)             | `validate-dependencies` | _(nenhum)_                                                                                                                                      | _Não disponível_ | -                                                                 |
+| Corrigir dependências inválidas automaticamente | `fix-dependencies`      | _(nenhum)_                                                                                                                                      | _Não disponível_ | -                                                                 |
+| Exibir ajuda                                    | `help`                  | `[command]`                                                                                                                                     | _Não disponível_ | -                                                                 |
+
+---
+
+## **Resumo**
+
+- **MCP cobre:** listagem, consulta, criação, expansão, status, próxima tarefa.
+- **CLI oferece comandos adicionais** para:
+  - Inicialização, parsing PRD, geração de arquivos
+  - Análise e relatório de complexidade
+  - Gerenciamento de subtarefas
+  - Validação e correção de dependências
+  - Atualizações em lote com contexto
+  - Execução de scripts meta (`dev`)
+- Para integração completa, **usar MCP para operações CRUD rápidas** e **CLI para inicialização, parsing, geração, análise, dependências e automações avançadas**.

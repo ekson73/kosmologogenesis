@@ -423,7 +423,7 @@ flowchart TD
 
 ---
 
-## Apêndice: Prompt Original do Boomerang Mode
+## Apêndice: Prompt Boomerang Mode (locked)
 
 O prompt original do modo Boomerang, conforme definido em `.roomodes`, é apresentado abaixo para referência e integração precisa. Este prompt define o papel e as instruções operacionais do modo, servindo como base para sua orquestração estratégica.
 
@@ -545,7 +545,7 @@ Este apêndice apresenta uma enumeração detalhada de todas as funcionalidades,
 
 ---
 
-## Apêndice: Prompt Task Master Mode (Cópia do Boomerang Mode)
+## Apêndice: Prompt Task Master
 
 Abaixo está uma cópia integral do prompt do Boomerang Mode, adaptada como referência para o futuro "Task Master Mode". Use este texto como base para customizações e integração, garantindo que todos os princípios de orquestração e controle sejam mantidos.
 

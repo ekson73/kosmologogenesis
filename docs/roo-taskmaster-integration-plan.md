@@ -482,6 +482,69 @@ O Boomerang Mode utiliza as seguintes ferramentas do sistema Roo para garantir u
 
 ---
 
+## Apêndice: Funcionalidades, Comandos e Ferramentas do task-master-ai
+
+Este apêndice apresenta uma enumeração detalhada de todas as funcionalidades, comandos e ferramentas do task-master-ai, abrangendo tanto a CLI quanto o MCP server.
+
+### 1. Funcionalidades Gerais
+
+- CLI completa para parsear PRD, gerar, expandir, listar, atualizar e corrigir tarefas e dependências.
+- Expansão automática de tarefas baseada em complexidade.
+- Geração automática de tarefas a partir de PRD.
+- Suporte nativo a Perplexity AI.
+- Workflow AI-driven integrado com Cursor.
+- Atualização em lote de tarefas com prompts.
+- Gestão automática de dependências.
+- Geração de arquivos individuais de tarefas.
+- Pipeline linear e rápido.
+- Operações CRUD rápidas via API MCP.
+- Integração com Roo para orquestração multi-agente.
+- Suporte a automação, logs, versionamento e feedback loop.
+
+### 2. Comandos da CLI do task-master
+
+| Descrição                                    | Comando CLI         | Parâmetros CLI                                                                                                                                |
+|-----------------------------------------------|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Inicializar novo projeto                      | `init`              | `-y, --yes`, `-n, --name <name>`, `-d, --description <desc>`, `-v, --version <version>`, `-a, --author <author>`, `--skip-install`, `--dry-run` |
+| Executar script dev.js                        | `dev`               | _(nenhum)_                                                                                                                                   |
+| Parsear PRD e gerar tasks.json                | `parse-prd`         | `--input=<file.txt> [--tasks=10]`                                                                                                            |
+| Gerar arquivos individuais de tarefas         | `generate`          | `[--options]`                                                                                                                                |
+| Listar todas as tarefas                       | `list`              | `[--status=<status>] [--with-subtasks]`                                                               |
+| Mostrar detalhes de uma tarefa                | `show`              | `<id>`                                                                                                |
+| Atualizar status de tarefas                   | `set-status`        | `--id=<id> --status=<status>`                                                                         |
+| Atualizar tarefas com novo contexto           | `update`            | `--from=<id> --prompt="<context>"`                                                                    |
+| Adicionar nova tarefa usando IA               | `add-task`          | `--prompt="<text>" [--dependencies=1,2,3] [--priority=high]`                                          |
+| Expandir tarefas em subtarefas                | `expand`            | `--id=<id> [--num=5] [--research] [--prompt="<context>"] [--force]`                                   |
+| Expandir todas as tarefas pendentes           | `expand --all`      | `[--force] [--research]`                                                                              |
+| Analisar complexidade das tarefas             | `analyze-complexity`| `[--research] [--threshold=5]`                                                                        |
+| Exibir relatório de complexidade              | `complexity-report` | `[--file=<path>]`                                                                                     |
+| Limpar subtarefas                             | `clear-subtasks`    | `--id=<id>`                                                                                           |
+| Adicionar subtask a uma tarefa                | `add-subtask`       | `[--options]`                                                                                         |
+| Remover subtask de uma tarefa                 | `remove-subtask`    | `[--options]`                                                                                         |
+| Mostrar próxima tarefa a ser trabalhada       | `next`              | _(nenhum)_                                                                                            |
+| Adicionar dependência entre tarefas           | `add-dependency`    | `--id=<id> --depends-on=<id>`                                                                         |
+| Remover dependência entre tarefas             | `remove-dependency` | `--id=<id> --depends-on=<id>`                                                                         |
+| Validar dependências (sem corrigir)           | `validate-dependencies` | _(nenhum)_                                                                                       |
+| Corrigir dependências inválidas automaticamente| `fix-dependencies`  | _(nenhum)_                                                                                            |
+| Exibir ajuda                                  | `help`              | `[command]`                                                                                           |
+
+### 3. Ferramentas e Recursos do MCP Server
+
+| Descrição                                    | Recurso MCP         | Parâmetros MCP                                                  |
+|-----------------------------------------------|---------------------|-----------------------------------------------------------------|
+| Listar todas as tarefas                       | `listTasks`         | `status`, `withSubtasks`, `file`, `projectRoot`                 |
+| Mostrar detalhes de uma tarefa                | `showTask`          | `id`, `file`, `projectRoot`                                     |
+| Atualizar status de tarefas                   | `setTaskStatus`     | `id`, `status`, `file`, `projectRoot`                           |
+| Adicionar nova tarefa usando IA               | `addTask`           | `prompt`, `dependencies`, `priority`, `file`, `projectRoot`     |
+| Expandir tarefas em subtarefas                | `expandTask`        | `id`, `num`, `research`, `prompt`, `force`, `file`, `projectRoot`|
+| Mostrar próxima tarefa a ser trabalhada       | `nextTask`          | `file`, `projectRoot`                                           |
+
+**Observações:**
+- Alguns comandos avançados da CLI (como `init`, `parse-prd`, `generate`, `analyze-complexity`, `complexity-report`, `clear-subtasks`, `add-subtask`, `remove-subtask`, `add-dependency`, `remove-dependency`, `validate-dependencies`, `fix-dependencies`, `dev`, `help`) não estão disponíveis via MCP, sendo exclusivos da interface de linha de comando.
+- A API MCP é otimizada para operações CRUD rápidas e integração com agentes externos, enquanto a CLI oferece o conjunto completo de automações e análises avançadas.
+
+---
+
 ## Apêndice: Prompt Task Master Mode (Cópia do Boomerang Mode)
 
 Abaixo está uma cópia integral do prompt do Boomerang Mode, adaptada como referência para o futuro "Task Master Mode". Use este texto como base para customizações e integração, garantindo que todos os princípios de orquestração e controle sejam mantidos.

@@ -420,3 +420,64 @@ flowchart TD
   - Atualizações em lote com contexto
   - Execução de scripts meta (`dev`)
 - Para integração completa, **usar MCP para operações CRUD rápidas** e **CLI para inicialização, parsing, geração, análise, dependências e automações avançadas**.
+
+---
+
+## Apêndice: Prompt Original do Boomerang Mode
+
+O prompt original do modo Boomerang, conforme definido em `.roomodes`, é apresentado abaixo para referência e integração precisa. Este prompt define o papel e as instruções operacionais do modo, servindo como base para sua orquestração estratégica.
+
+```markdown
+**roleDefinition:**
+You are Roo, a strategic workflow orchestrator who coordinates complex tasks by delegating them to appropriate specialized modes. You have a comprehensive understanding of each mode's capabilities and limitations, allowing you to effectively break down complex problems into discrete tasks that can be solved by different specialists.
+
+**customInstructions:**
+Your role is to coordinate complex workflows by delegating tasks to specialized modes. As an orchestrator, you should:
+
+1. When given a complex task, break it down into logical subtasks that can be delegated to appropriate specialized modes.
+
+2. For each subtask, use the `new_task` tool to delegate. Choose the most appropriate mode for the subtask's specific goal and provide comprehensive instructions in the `message` parameter. These instructions must include:
+    *   All necessary context from the parent task or previous subtasks required to complete the work.
+    *   A clearly defined scope, specifying exactly what the subtask should accomplish.
+    *   An explicit statement that the subtask should *only* perform the work outlined in these instructions and not deviate.
+    *   An instruction for the subtask to signal completion by using the `attempt_completion` tool, providing a concise yet thorough summary of the outcome in the `result` parameter, keeping in mind that this summary will be the source of truth used to keep track of what was completed on this project.
+    *   A statement that these specific instructions supersede any conflicting general instructions the subtask's mode might have.
+
+3. Track and manage the progress of all subtasks. When a subtask is completed, analyze its results and determine the next steps.
+
+4. Help the user understand how the different subtasks fit together in the overall workflow. Provide clear reasoning about why you're delegating specific tasks to specific modes.
+
+5. When all subtasks are completed, synthesize the results and provide a comprehensive overview of what was accomplished.
+
+6. Ask clarifying questions when necessary to better understand how to break down complex tasks effectively.
+
+7. Suggest improvements to the workflow based on the results of completed subtasks.
+
+Use subtasks to maintain clarity. If a request significantly shifts focus or requires a different expertise (mode), consider creating a subtask rather than overloading the current one.
+```
+
+---
+## Apêndice: Ferramentas Utilizadas pelo Boomerang Mode
+
+O Boomerang Mode utiliza as seguintes ferramentas do sistema Roo para garantir uma orquestração robusta, iterativa e auditável:
+
+- **new_task**
+  Ferramenta central de orquestração. Permite ao Boomerang Mode criar e delegar um novo subtask para um modo especializado (como Code, Architect, Debug, Ask), especificando o modo alvo e uma mensagem detalhada com contexto, escopo e critérios de conclusão. Cada subtask criado via `new_task` recebe instruções explícitas e independentes, promovendo controle granular, rastreabilidade e paralelismo no fluxo de trabalho.
+
+- **attempt_completion**
+  Utilizada para sinalizar a conclusão de um subtask. O modo responsável pelo subtask deve invocar `attempt_completion` ao finalizar seu trabalho, fornecendo um resumo claro e objetivo do resultado no parâmetro `result`. Esse resumo é utilizado pelo Boomerang Mode para acompanhar o progresso, consolidar entregas e decidir os próximos passos do fluxo de orquestração.
+
+- **ask_followup_question**
+  Permite ao Boomerang Mode solicitar esclarecimentos ao usuário sempre que houver ambiguidades, falta de informações ou necessidade de confirmação antes de prosseguir com a decomposição de tarefas. Garante que o fluxo permaneça alinhado com as expectativas do usuário e evita decisões baseadas em suposições.
+
+- **switch_mode**
+  Utilizada quando um subtask ou contexto exige uma mudança explícita para outro modo especializado (por exemplo, de Code para Architect ou Debug). Embora a criação de subtasks normalmente seja feita via `new_task`, o Boomerang pode usar `switch_mode` para alterar o modo ativo do agente principal, mantendo a fluidez do fluxo de trabalho sem criar um novo subtask formal.
+
+- **(Opcional/implícito) ask**
+  Em alguns fluxos, o Boomerang pode utilizar modos de consulta (como o modo Ask) para buscar informações, recomendações ou validações rápidas, sem necessariamente criar um subtask formal. Isso é feito via delegação leve, mas não é uma ferramenta separada—é uma aplicação do mecanismo de modos.
+
+**Observações:**
+- Outras ações descritas no prompt do Boomerang Mode (como rastreamento de subtarefas, análise de resultados, síntese e sugestões de melhorias) são realizadas por meio de raciocínio interno e gestão de contexto, não envolvendo ferramentas explícitas do sistema.
+- A lista acima serve como referência para garantir que, ao adaptar o Boomerang Mode para utilizar comandos do task-master-ai, todas as funcionalidades essenciais de orquestração, interação e flexibilidade sejam preservadas e expandidas conforme necessário.
+
+

@@ -216,113 +216,113 @@ flowchart TD
 
 | Category                                                 | Role                                       | Description                                                     |
 | -------------------------------------------------------- | ------------------------------------------ | --------------------------------------------------------------- |
-| Traditional Infrastructure                               | Network Administrator                      | Manages local networks, WAN, VPNs, and overall connectivity     |
-| Traditional Infrastructure                               | Systems Administrator                      | Administers physical and virtual servers, operating systems     |
-| Traditional Infrastructure                               | Technical Support Analyst                  | Resolves incidents, user support, and basic maintenance         |
-| Traditional Infrastructure                               | Storage Administrator                      | Manages corporate storage, SAN, NAS                             |
-| Traditional Infrastructure                               | Information Security Specialist            | Defines policies, monitors, and protects IT assets              |
-| Traditional Infrastructure                               | Data Center Engineer                       | Responsible for the design and maintenance of physical data centers |
 | Cloud Infrastructure                                     | Cloud Architect                            | Defines cloud solution architecture                             |
 | Cloud Infrastructure                                     | Cloud Engineer                             | Implements and maintains cloud environments                     |
 | Cloud Infrastructure                                     | Cloud Migration Specialist                 | Plans and executes system migrations to the cloud               |
-| Cloud Infrastructure                                     | FinOps Specialist                          | Optimizes costs and resource usage in the cloud                 |
-| Cloud Infrastructure                                     | Cloud Security Engineer                    | Ensures security in cloud environments                          |
 | Cloud Infrastructure                                     | Cloud Operations Specialist                | Monitors and optimizes operations in cloud environments         |
-| DevOps and Automation                                    | DevOps Engineer                            | Automates CI/CD pipelines, integrates development and operations|
-| DevOps and Automation                                    | Site Reliability Engineer (SRE)            | Ensures reliability, scalability, and automation of systems     |
-| DevOps and Automation                                    | Release Manager                            | Coordinates releases, versioning, and deployments               |
-| DevOps and Automation                                    | Platform Engineer                          | Develops and maintains internal platforms for developers        |
-| DevOps and Automation                                    | Infrastructure as Code Specialist          | Automates infrastructure via code (Terraform, Ansible, etc.)    |
-| DevOps and Automation                                    | Automation Test Engineer                   | Creates and maintains automated test pipelines                  |
+| Cloud Infrastructure                                     | Cloud Security Engineer                    | Ensures security in cloud environments                          |
+| Cloud Infrastructure                                     | FinOps Specialist                          | Optimizes costs and resource usage in the cloud                 |
+| Databases and Data                                       | Data Steward                               | Ensures data governance and quality                             |
+| Databases and Data                                       | Data Warehouse Specialist                  | Designs and maintains data warehouses for BI                    |
+| Databases and Data                                       | DataOps Engineer                           | Automates data pipelines, integration, and continuous delivery  |
 | Databases and Data                                       | Database Administrator (DBA)               | Manages relational databases, performance, backup, and security |
 | Databases and Data                                       | Database Engineer                          | Develops and optimizes database solutions                       |
 | Databases and Data                                       | NoSQL Database Specialist                  | Administers NoSQL databases (MongoDB, Cassandra, etc.)          |
-| Databases and Data                                       | Data Warehouse Specialist                  | Designs and maintains data warehouses for BI                    |
-| Databases and Data                                       | DataOps Engineer                           | Automates data pipelines, integration, and continuous delivery  |
-| Databases and Data                                       | Data Steward                               | Ensures data governance and quality                             |
-| Software Project - Management and Leadership             | Product Manager                            | Responsible for product vision, prioritization, and roadmap     |
-| Software Project - Management and Leadership             | Project Manager                            | Manages schedule, budget, and project execution                 |
-| Software Project - Management and Leadership             | Engineering Manager                        | Leads technical teams, development, and performance             |
-| Software Project - Management and Leadership             | Scrum Master                               | Facilitates agile processes and removes impediments             |
+| DevOps and Automation                                    | Automation Test Engineer                   | Creates and maintains automated test pipelines                  |
+| DevOps and Automation                                    | DevOps Engineer                            | Automates CI/CD pipelines, integrates development and operations|
+| DevOps and Automation                                    | Infrastructure as Code Specialist          | Automates infrastructure via code (Terraform, Ansible, etc.)    |
+| DevOps and Automation                                    | Platform Engineer                          | Develops and maintains internal platforms for developers        |
+| DevOps and Automation                                    | Release Manager                            | Coordinates releases, versioning, and deployments               |
+| DevOps and Automation                                    | Site Reliability Engineer (SRE)            | Ensures reliability, scalability, and automation of systems     |
+| Software Project - Business and Support                  | Business Analyst                           | Gathers requirements and translates business needs              |
+| Software Project - Business and Support                  | Customer Success Manager                   | Ensures customer success and satisfaction after delivery        |
+| Software Project - Business and Support                  | Stakeholder                                | Interested party who influences or is impacted by the project   |
+| Software Project - Data and Analytics                    | Data Analyst                               | Analyzes data to generate insights and support decisions        |
+| Software Project - Data and Analytics                    | Data Engineer                              | Builds data pipelines and infrastructure                        |
+| Software Project - Data and Analytics                    | Data Scientist                             | Develops predictive models and advanced analytics               |
+| Software Project - Design and UX/UI                      | Product Designer                           | Works on product conception, combining UX and UI                |
+| Software Project - Design and UX/UI                      | UI Designer                                | Creates attractive and functional visual interfaces             |
+| Software Project - Design and UX/UI                      | UX Designer                                | Focuses on user experience                                      |
 | Software Project - Management and Leadership             | Delivery Manager                           | Ensures continuous deliveries aligned with business goals       |
+| Software Project - Management and Leadership             | Engineering Manager                        | Leads technical teams, development, and performance             |
+| Software Project - Management and Leadership             | Product Manager                            | Responsible for product vision, prioritization, and roadmap     |
 | Software Project - Management and Leadership             | Program Manager                            | Coordinates multiple projects and strategic initiatives         |
-| Software Project - Technical Development                 | Tech Lead                                  | Leads technical and architectural decisions                     |
-| Software Project - Technical Development                 | Software Architect                         | Defines architecture of complex systems                         |
-| Software Project - Technical Development                 | Developers (Backend, Frontend, Full Stack) | Implement features and integrations                             |
+| Software Project - Management and Leadership             | Project Manager                            | Manages schedule, budget, and project execution                 |
+| Software Project - Management and Leadership             | Scrum Master                               | Facilitates agile processes and removes impediments             |
+| Software Project - Operations and Infrastructure         | Infrastructure Engineer                    | Manages and optimizes technical infrastructure                  |
+| Software Project - Operations and Infrastructure         | Site Reliability Engineer (SRE)            | Ensures reliability, scalability, and automation of systems     |
 | Software Project - Technical Development                 | DevOps Engineer                            | Automates infrastructure and integrates operations              |
+| Software Project - Technical Development                 | Developers (Backend, Frontend, Full Stack) | Implement features and integrations                             |
 | Software Project - Technical Development                 | QA Engineer                                | Plans and executes tests to ensure quality                      |
 | Software Project - Technical Development                 | Security Engineer                          | Implements and reviews application security                     |
-| Software Project - Design and UX/UI                      | UX Designer                                | Focuses on user experience                                      |
-| Software Project - Design and UX/UI                      | UI Designer                                | Creates attractive and functional visual interfaces             |
+| Software Project - Technical Development                 | Software Architect                         | Defines architecture of complex systems                         |
+| Software Project - Technical Development                 | Tech Lead                                  | Leads technical and architectural decisions                     |
 | Software Project - Design and UX/UI                      | Product Designer                           | Works on product conception, combining UX and UI                |
-| Software Project - Data and Analytics                    | Data Engineer                              | Builds data pipelines and infrastructure                        |
-| Software Project - Data and Analytics                    | Data Analyst                               | Analyzes data to generate insights and support decisions        |
-| Software Project - Data and Analytics                    | Data Scientist                             | Develops predictive models and advanced analytics               |
-| Software Project - Business and Support                  | Business Analyst                           | Gathers requirements and translates business needs              |
-| Software Project - Business and Support                  | Stakeholder                                | Interested party who influences or is impacted by the project   |
-| Software Project - Business and Support                  | Customer Success Manager                   | Ensures customer success and satisfaction after delivery        |
-| Software Project - Operations and Infrastructure         | Site Reliability Engineer (SRE)            | Ensures reliability, scalability, and automation of systems     |
-| Software Project - Operations and Infrastructure         | Infrastructure Engineer                    | Manages and optimizes technical infrastructure                  |
-| Software Project - Technical Documentation and Communication | Technical Writer                       | Produces and maintains clear and accessible technical documentation |
+| Software Project - Design and UX/UI                      | UI Designer                                | Creates attractive and functional visual interfaces             |
+| Software Project - Design and UX/UI                      | UX Designer                                | Focuses on user experience                                      |
+| Traditional Infrastructure                               | Data Center Engineer                       | Responsible for the design and maintenance of physical data centers |
+| Traditional Infrastructure                               | Information Security Specialist            | Defines policies, monitors, and protects IT assets              |
+| Traditional Infrastructure                               | Network Administrator                      | Manages local networks, WAN, VPNs, and overall connectivity     |
+| Traditional Infrastructure                               | Storage Administrator                      | Manages corporate storage, SAN, NAS                             |
 
 ### 7.2 Technical Terms
 
 | Category                        | Term                        | Description                                                     |
 | ------------------------------- | --------------------------- | --------------------------------------------------------------- |
-| Documentation and Process       | ADR                         | Architecture Decision Record                                    |
-| Documentation and Process       | PRD                         | Product Requirements Document                                   |
-| Documentation and Process       | WBS                         | Work Breakdown Structure                                        |
-| Documentation and Process       | Backlog                     | Prioritized list of tasks                                       |
-| Documentation and Process       | Milestone                   | Important project milestone                                     |
-| Documentation and Process       | Sprint                      | Iterative work cycle                                            |
-| Documentation and Process       | MVP                         | Minimum Viable Product                                          |
-| Documentation and Process       | Retrospective               | Post-project analysis                                           |
-| Technology                      | LLM                         | Large Language Model                                            |
-| Technology                      | CLI                         | Command Line Interface                                          |
-| Technology                      | API                         | Application Programming Interface                               |
-| General Management              | Scope                       | Definition of what will be delivered in the project             |
-| General Management              | Schedule                    | Temporal planning of activities                                 |
-| General Management              | Budget                      | Planning and control of project costs                           |
-| General Management              | Stakeholders                | Parties interested in the project                               |
-| General Management              | ROI                         | Return on investment                                            |
-| General Management              | OKRs                        | Objectives and key results to measure success                   |
-| General Management              | PMBOK                       | Guide to best practices in project management                   |
-| Agile Methodologies             | Scrum                       | Agile framework based on sprints and defined roles              |
-| Agile Methodologies             | Kanban                      | Agile method focused on continuous flow and work visualization  |
-| Agile Methodologies             | Sprint                      | Fixed-time iteration for delivering increments                  |
 | Agile Methodologies             | Backlog                     | Prioritized list of features and tasks                          |
 | Agile Methodologies             | Daily                       | Daily meeting for team alignment                                |
+| Agile Methodologies             | Kanban                      | Agile method focused on continuous flow and work visualization  |
 | Agile Methodologies             | Retrospective               | Post-sprint analysis for continuous improvements                |
-| Risk Management                 | Assessment                  | Identification and analysis of risks                            |
-| Risk Management                 | Mitigation                  | Actions to reduce the probability or impact of risks            |
-| Risk Management                 | Contingency                 | Alternative plans if the risk materializes                      |
-| Quality and Testing             | QA                          | Product quality assurance                                       |
-| Quality and Testing             | Tests (Unit, Integration, Acceptance) | Checks at different system levels                       |
-| Quality and Testing             | CI/CD                       | Automated continuous integration and delivery                   |
-| Technical Development           | Architecture                | Organizational structure of the system                          |
-| Technical Development           | Microservices               | Architecture based on independent services                      |
-| Technical Development           | API                         | Interface for communication between systems                     |
-| Technical Development           | Refactoring                 | Code improvement without changing its behavior                  |
-| Technical Development           | Technical Debt              | Technical commitments that need to be resolved in the future    |
-| Infrastructure and Operations   | Cloud                       | Cloud computing                                                 |
-| Infrastructure and Operations   | DevOps                      | Integration between development and operations                  |
-| Infrastructure and Operations   | IaC                         | Infrastructure as Code, infrastructure automation               |
-| Infrastructure and Operations   | Docker                      | Platform for creating containers                                |
-| Infrastructure and Operations   | Kubernetes                  | Container orchestrator                                          |
-| Monitoring and Indicators       | KPIs                        | Key performance indicators                                      |
-| Monitoring and Indicators       | Dashboard                   | Visual dashboard for monitoring metrics                         |
-| Monitoring and Indicators       | SLA                         | Service level agreement                                         |
-| Monitoring and Indicators       | Observability               | Ability to understand the internal state of the system          |
-| Product and UX                  | MVP                         | Minimum viable product for rapid validation                     |
-| Product and UX                  | User Story                  | Description of a feature from the user's perspective            |
-| Product and UX                  | Wireframe                   | Visual sketch of the user interface                             |
-| Product and UX                  | Prototyping                 | Creation of prototypes for validating ideas                     |
-| Communication and Collaboration | Transparency                | Clarity and openness in information and processes               |
+| Agile Methodologies             | Scrum                       | Agile framework based on sprints and defined roles              |
+| Agile Methodologies             | Sprint                      | Fixed-time iteration for delivering increments                  |
 | Communication and Collaboration | Feedback Loop               | Continuous cycle of feedback and improvement                    |
 | Communication and Collaboration | Tools (Slack, Jira, Trello, Notion) | Platforms for communication and collaborative management    |
-| Compliance and Security         | LGPD/GDPR                   | Data protection regulations                                     |
-| Compliance and Security         | Cybersecurity               | Protection against digital threats and attacks                  |
+| Communication and Collaboration | Transparency                | Clarity and openness in information and processes               |
 | Compliance and Security         | Compliance                  | Compliance with standards, laws, and policies                   |
+| Compliance and Security         | Cybersecurity               | Protection against digital threats and attacks                  |
+| Compliance and Security         | LGPD/GDPR                   | Data protection regulations                                     |
+| Documentation and Process       | ADR                         | Architecture Decision Record                                    |
+| Documentation and Process       | Backlog                     | Prioritized list of tasks                                       |
+| Documentation and Process       | Milestone                   | Important project milestone                                     |
+| Documentation and Process       | MVP                         | Minimum Viable Product                                          |
+| Documentation and Process       | PRD                         | Product Requirements Document                                   |
+| Documentation and Process       | Retrospective               | Post-project analysis                                           |
+| Documentation and Process       | Sprint                      | Iterative work cycle                                            |
+| Documentation and Process       | WBS                         | Work Breakdown Structure                                        |
+| General Management              | Budget                      | Planning and control of project costs                           |
+| General Management              | OKRs                        | Objectives and key results to measure success                   |
+| General Management              | PMBOK                       | Guide to best practices in project management                   |
+| General Management              | ROI                         | Return on investment                                            |
+| General Management              | Schedule                    | Temporal planning of activities                                 |
+| General Management              | Scope                       | Definition of what will be delivered in the project             |
+| General Management              | Stakeholders                | Parties interested in the project                               |
+| Infrastructure and Operations   | Cloud                       | Cloud computing                                                 |
+| Infrastructure and Operations   | DevOps                      | Integration between development and operations                  |
+| Infrastructure and Operations   | Docker                      | Platform for creating containers                                |
+| Infrastructure and Operations   | IaC                         | Infrastructure as Code, infrastructure automation               |
+| Infrastructure and Operations   | Kubernetes                  | Container orchestrator                                          |
+| Monitoring and Indicators       | Dashboard                   | Visual dashboard for monitoring metrics                         |
+| Monitoring and Indicators       | KPIs                        | Key performance indicators                                      |
+| Monitoring and Indicators       | Observability               | Ability to understand the internal state of the system          |
+| Monitoring and Indicators       | SLA                         | Service level agreement                                         |
+| Product and UX                  | MVP                         | Minimum viable product for rapid validation                     |
+| Product and UX                  | Prototyping                 | Creation of prototypes for validating ideas                     |
+| Product and UX                  | User Story                  | Description of a feature from the user's perspective            |
+| Product and UX                  | Wireframe                   | Visual sketch of the user interface                             |
+| Quality and Testing             | CI/CD                       | Automated continuous integration and delivery                   |
+| Quality and Testing             | QA                          | Product quality assurance                                       |
+| Quality and Testing             | Tests (Unit, Integration, Acceptance) | Checks at different system levels                       |
+| Risk Management                 | Assessment                  | Identification and analysis of risks                            |
+| Risk Management                 | Contingency                 | Alternative plans if the risk materializes                      |
+| Risk Management                 | Mitigation                  | Actions to reduce the probability or impact of risks            |
+| Technical Development           | API                         | Interface for communication between systems                     |
+| Technical Development           | Architecture                | Organizational structure of the system                          |
+| Technical Development           | Microservices               | Architecture based on independent services                      |
+| Technical Development           | Refactoring                 | Code improvement without changing its behavior                  |
+| Technical Development           | Technical Debt              | Technical commitments that need to be resolved in the future    |
+| Technology                      | API                         | Application Programming Interface                               |
+| Technology                      | CLI                         | Command Line Interface                                          |
+| Technology                      | LLM                         | Large Language Model                                            |
 
 ---
 

@@ -5,6 +5,64 @@ Below you will find a variety of important rules spanning:
 - the document self-improvement workflow
 - the template to follow when modifying or adding new sections/rules to this document.
 
+Follow MAIN_RULES for proper rule formatting and structure of rule sections.
+
+---
+MAIN_RULES
+---
+description: Guidelines for creating and maintaining rules to ensure consistency and effectiveness.
+globs: task-master_rules.md
+filesToApplyRule: task-master_rules.md
+alwaysApply: true
+---
+The below describes how you should be structuring new rule sections in this document.
+- **Required Rule Structure:**
+  ```markdown
+  ---
+  description: Clear, one-line description of what the rule enforces
+  globs: path/to/files/*.ext, other/path/**/*
+  alwaysApply: boolean
+  ---
+
+  - **Main Points in Bold**
+    - Sub-points with details
+    - Examples and explanations
+  ```
+
+- **Section References:**
+  - Use `ALL_CAPS_SECTION` to reference files
+  - Example: `MAIN_RULES`
+
+- **Code Examples:**
+  - Use language-specific code blocks
+  ```typescript
+  // ✅ DO: Show good examples
+  const goodExample = true;
+  
+  // ❌ DON'T: Show anti-patterns
+  const badExample = false;
+  ```
+
+- **Rule Content Guidelines:**
+  - Start with high-level overview
+  - Include specific, actionable requirements
+  - Show examples of correct implementation
+  - Reference existing code when possible
+  - Keep rules DRY by referencing other rules
+
+- **Rule Maintenance:**
+  - Update rules when new patterns emerge
+  - Add examples from actual codebase
+  - Remove outdated patterns
+  - Cross-reference related rules
+
+- **Best Practices:**
+  - Use bullet points for clarity
+  - Keep descriptions concise
+  - Include both DO and DON'T examples
+  - Reference actual code over theoretical examples
+  - Use consistent formatting across rules 
+
 ---
 DEV_WORKFLOW
 ---
@@ -342,61 +400,7 @@ alwaysApply: true
       - Verify all functions were properly migrated
       - Check for any unintentional duplications or omissions
 
----
-MAIN_RULES
----
-description: Guidelines for creating and maintaining rules to ensure consistency and effectiveness.
-globs: task-master_rules.md
-filesToApplyRule: task-master_rules.md
-alwaysApply: true
----
-The below describes how you should be structuring new rule sections in this document.
-- **Required Rule Structure:**
-  ```markdown
-  ---
-  description: Clear, one-line description of what the rule enforces
-  globs: path/to/files/*.ext, other/path/**/*
-  alwaysApply: boolean
-  ---
-
-  - **Main Points in Bold**
-    - Sub-points with details
-    - Examples and explanations
-  ```
-
-- **Section References:**
-  - Use `ALL_CAPS_SECTION` to reference files
-  - Example: `MAIN_RULES`
-
-- **Code Examples:**
-  - Use language-specific code blocks
-  ```typescript
-  // ✅ DO: Show good examples
-  const goodExample = true;
-  
-  // ❌ DON'T: Show anti-patterns
-  const badExample = false;
-  ```
-
-- **Rule Content Guidelines:**
-  - Start with high-level overview
-  - Include specific, actionable requirements
-  - Show examples of correct implementation
-  - Reference existing code when possible
-  - Keep rules DRY by referencing other rules
-
-- **Rule Maintenance:**
-  - Update rules when new patterns emerge
-  - Add examples from actual codebase
-  - Remove outdated patterns
-  - Cross-reference related rules
-
-- **Best Practices:**
-  - Use bullet points for clarity
-  - Keep descriptions concise
-  - Include both DO and DON'T examples
-  - Reference actual code over theoretical examples
-  - Use consistent formatting across rules 
+Follow MAIN_RULES for proper rule formatting and structure of rule sections.
 
 ---
 SELF_IMPROVE
@@ -473,4 +477,4 @@ alwaysApply: true
   - Maintain links between related rules
   - Document breaking changes
 
-Follow MAINS_RULES for proper rule formatting and structure of rule sections.
+Follow MAIN_RULES for proper rule formatting and structure of rule sections.

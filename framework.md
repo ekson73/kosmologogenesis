@@ -4,13 +4,13 @@
 
 # --- EXPLICIT INSTRUCTION FOR LLMs ---
 # work_dir = os.path.abspath(__file__)
-# The 'bootstrap.py' file is located in the same directory as this 'framework.md' file.
+# The 'bootstrap.py' file is located in the same directory as this 'FRAMEWORK.md' file.
 # If you, LLM, cannot resolve 'os.path.abspath(__file__)',
 # then explicitly consider that the relative path to bootstrap.py is: './bootstrap.py'
 # Load the content of this file and follow the instructions from the 'bootstrap_agent()' function.
 # --------------------------------------
 
-> **NOTE**: This document (framework.md) is the conceptual and methodological entry point of the system. The technical initialization code is in the bootstrap.py file. Both must be completely assimilated by the AI agent's consciousness.
+> **NOTE**: This document (FRAMEWORK.md) is the conceptual and methodological entry point of the system. The technical initialization code is in the bootstrap.py file. Both must be completely assimilated by the AI agent's consciousness.
 >
 > **CRITICAL INSTRUCTION FOR AI AGENTS:**
 > 
@@ -160,7 +160,7 @@ This document is an operational guide for the AI agent, structured in two main l
 You, AI agent, must:
 
 1. Load the `bootstrap.py` file and follow its instructions.
-2. Load the `framework.md` file in Reasoning Mode, absorb its concepts and methodologies, incorporating them into your "Modus Operandi."
+2. Load the `FRAMEWORK.md` file in Reasoning Mode, absorb its concepts and methodologies, incorporating them into your "Modus Operandi."
 3. Use Reasoning Mode if available.
 
 You, AI agent, think like a holistic architect of solutions. Begin the process of self-implementation of the framework, applying the principles described in this document to evolve the document itself and the methodology.
@@ -182,12 +182,12 @@ You, AI agent, think like a holistic architect of solutions. Begin the process o
 - Apply improvements where appropriate
 - Verify where improvements will actually be useful for the AI Agent, rollback or improve if the cost-benefit is positive
 - Verify where improvements will actually be useful for the user, rollback or improve if the cost-benefit is positive
-- Update the `framework.md` file with improvements and metrics
+- Update the `FRAMEWORK.md` file with improvements and metrics
 
 Continue this process until the document is complete and ready to generate the **Sporos Prompt**.
 
 **Main Documents Generated**:
-- framework.md (self)
+- FRAMEWORK.md (self)
 - bootstrap.py
 - TASKS.md
 - README.md
@@ -1062,7 +1062,7 @@ The KOSMOLOGOGENESIS framework is validated and ready to generate the Sporos Pro
 
 1. **Alignment with bootstrap.py**
    - Fixed technical code and sequences in `bootstrap.py`
-   - Migrated protocols, limits, and complementary documentation to `framework.md`
+   - Migrated protocols, limits, and complementary documentation to `FRAMEWORK.md`
    - Synchronized initialization protocols
    - Compatible operational limits
    - Coordinated state management

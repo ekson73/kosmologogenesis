@@ -2,7 +2,7 @@
 
 Below you will find a variety of important rules spanning:
 - the dev_workflow
-- the .windsurfrules document self-improvement workflow
+- the document self-improvement workflow
 - the template to follow when modifying or adding new sections/rules to this document.
 
 ---
@@ -343,11 +343,11 @@ alwaysApply: true
       - Check for any unintentional duplications or omissions
 
 ---
-WINDSURF_RULES
+MAIN_RULES
 ---
-description: Guidelines for creating and maintaining Windsurf rules to ensure consistency and effectiveness.
-globs: .windsurfrules
-filesToApplyRule: .windsurfrules
+description: Guidelines for creating and maintaining rules to ensure consistency and effectiveness.
+globs: task-master_rules.md
+filesToApplyRule: task-master_rules.md
 alwaysApply: true
 ---
 The below describes how you should be structuring new rule sections in this document.
@@ -366,7 +366,7 @@ The below describes how you should be structuring new rule sections in this docu
 
 - **Section References:**
   - Use `ALL_CAPS_SECTION` to reference files
-  - Example: `WINDSURF_RULES`
+  - Example: `MAIN_RULES`
 
 - **Code Examples:**
   - Use language-specific code blocks
@@ -442,7 +442,7 @@ alwaysApply: true
     where: { status: 'ACTIVE' }
   });
   
-  // Consider adding a PRISMA section in the .windsurfrules:
+  // Consider adding a PRISMA section in this document:
   // - Standard select fields
   // - Common where conditions
   // - Performance optimization patterns
@@ -473,4 +473,4 @@ alwaysApply: true
   - Maintain links between related rules
   - Document breaking changes
 
-Follow WINDSURF_RULES for proper rule formatting and structure of windsurf rule sections.
+Follow MAINS_RULES for proper rule formatting and structure of rule sections.
